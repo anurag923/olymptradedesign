@@ -1,0 +1,7 @@
+{
+  "name": "olymptrade_21.09.21",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

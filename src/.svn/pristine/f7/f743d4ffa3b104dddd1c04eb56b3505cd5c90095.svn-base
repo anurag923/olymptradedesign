@@ -1,0 +1,1019 @@
+@media  (max-width: 1199px){
+
+
+
+}
+
+@media (max-width: 992px) {
+ 
+ 
+
+ 
+ }
+ @media (max-width: 768px){
+    .container {
+        max-width: 90% !important;
+       padding: 0!important;
+        margin: 0 auto;
+    
+    }
+
+     .home-page-title{
+         display: none !important ;
+     } 
+     .dispaly-icon{
+         display: block !important;
+         font-size: 26px;
+    margin-top: 12px;
+     }
+     #main-content{
+        display:block  !important;
+    }
+    /* header close */
+
+/* section1 */
+.p-home-m-welcome__title {
+    color: #fff;
+    
+    font-size: 2.25rem !important;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0 0 1rem;
+}
+.com-c-description {
+    font-size: 1.2rem !important;
+}
+.p-home-m-welcome__img {
+    width: 100% !important;
+}
+.Start_Trading {
+    font-size: 14px;
+    height: 50px !important;
+    text-transform: capitalize;
+}
+
+
+    /* section1 close */
+    /* section2 */
+    /* section2 */
+    .p-home-m-new-features__card_size_small {
+         
+        height:35% !important;
+           width: 98%;
+       }
+       .p-home-m-new-features-c-card__title {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        font-weight: 800;
+        letter-spacing: .03em;
+        line-height: 1.33;
+        margin: 0 0 1rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .p-home-m-new-features-c-card_color_positive {
+        background-color: #1fbf75;
+        height: 74% !important;
+        width: 98%;
+    }
+    .p-home-m-new-features-c-card_type_experience .p-home-m-new-features-c-card__back {
+        background-position: -5px 176px !important;
+        background-size: 121%;
+        
+    }
+    /* section5 */
+.p-home-m-features__card {
+    background-color: #172331;
+    border-radius: 1.25rem;
+    justify-content: flex-end;
+    margin-bottom: 1.25rem;
+    max-width: 16rem;
+    min-height: 12.3125rem !important;
+    padding-bottom: 0;
+    padding-top: 1.875rem;
+    width: 45%;
+    margin-right: 5%;
+}
+.p-home-m-features__card-title {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: .04em;
+    line-height: 1.33;
+    margin: 0;
+    margin-top: 94px !important;
+    max-width: 7.3125rem !important;
+}
+.p-home-m-features__content {
+    margin-bottom: 3rem !important;
+    max-width: 25.6875rem;
+}
+.com-c-button-app_full_width {
+    min-width: 13.375rem !important; 
+}
+.p-home-m-devices__review-rating {
+    margin-right: 0.25rem !important;
+}
+
+
+/* platform */
+.sentiment {
+    width: .8125rem;
+}
+
+.asset-button {
+    align-content: center;
+    background-color: #203146;
+    border: 0.0625rem solid;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 0px !important;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.btn-display{
+    display: none;
+}
+.btn-display_resp{
+    display: block;
+}
+.account-balance__content{
+    display: none;
+}
+
+.Button-module-host-2B_res{
+    align-items: center;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.25;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 10px 17px;
+   
+}
+.color-fff{
+    color: #fff !important;
+}
+
+.chart .main-chart-container {
+    z-index: 0;
+}
+.trade-frame__content img{
+    height: 500px !important;
+    width: 100%;
+}
+.platform-side-right{
+    width: 8% !important;
+}
+.platform-side-left{
+    width: 82% !important;
+}
+.header-left{
+    width: 100% !important;
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+}
+.platform-select{
+    width: 40%;
+}
+
+
+
+/* about */
+.about__title {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 4rem;
+    line-height: 4rem !important; 
+}
+.about_statistics__card-title{
+    font-size: 1.75rem !important;
+}
+.about_statistics__card-description {
+    font-size: 1rem !important;
+}
+.about_statistics__card {
+    padding: 1.5rem 1rem !important;
+    text-align: left;
+    width: 50%;
+}
+
+.about-countries {
+    background-image: url(bg-countries-ful.png);
+    background-repeat: no-repeat;
+    color: #fff;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 0rem !important;
+    padding-top: 0rem !important;
+    background-position: 80% 0 !important;
+    /* box-sizing: border-box; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    font-family: "Roboto", sans-serif;
+    position: relative;
+}
+.about-countries__description {
+    margin-left: 0% !important;
+    margin-top: 40% !important;
+    min-width: 100% !important;
+    margin-bottom: 0% !important;
+    display: flex;
+    flex-direction: column;
+}
+.about-countries-list{
+    grid-row-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr !important; 
+}
+.about-countries__description-text {
+    font-size: 1rem !important;
+}
+.about-countries__title {
+    font-size: 2rem !important;
+
+}
+.about-support-c-statistic__value {
+    font-size: 1.25rem !important;
+  
+}  
+.about-support-c-statistic__description {
+    color: #a5bdd9;
+    font-size: 14px !important;
+    line-height: 2rem;
+}
+.page-m-socials-c-card{
+    padding: 2.5rem 0.5625rem !important;
+}
+
+/* helpcenter */
+
+.help-divs {
+    display: grid;
+    grid-gap: 16px;
+    text-align: left;
+    -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr;
+    grid-template-columns: repeat(4,1fr);
+}
+.help-sec1-heding {
+    margin-right: 2rem;
+    font-size: 3.5rem;
+    line-height: 5.4375rem;
+    color: #fff;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+ }
+ @media (max-width: 576px){
+    .container {
+        max-width: 90% !important;
+       padding: 0!important;
+        margin: 0 auto;
+    
+    }
+     .home-page-title{
+         display: none ;
+     }  
+     .dispaly-icon{
+        display: block !important;
+        font-size: 26px;
+         margin-top: 12px;
+    }
+
+    
+    /* section1 */
+    .p-home-m-welcome__title {
+        color: #fff;
+      
+        font-size: 2.25rem !important;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 1.5;
+        margin: 0 0 1rem;
+    }
+    .com-c-description {
+        font-size: 1.2rem !important;
+    }
+    .p-home-m-welcome__img {
+        width: 100% !important;
+    }
+    .Start_Trading {
+        font-size: 14px;
+        height: 50px !important;
+        text-transform: capitalize;
+    }
+    /* section1 close */
+    /* section2 */
+    .p-home-m-new-features__card_size_small {
+         
+        height:35% !important;
+           width: 98%;
+       }
+
+
+       /* section5 */
+.p-home-m-features__card {
+    background-color: #172331;
+    border-radius: 1.25rem;
+    justify-content: flex-end;
+    margin-bottom: 1.25rem;
+    max-width: 16rem;
+    min-height: 12.3125rem !important;
+    padding-bottom: 0;
+    padding-top: 1.875rem;
+    width: 45%;
+    margin-right: 5%;
+}
+.p-home-m-features__card-title {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: .04em;
+    line-height: 1.33;
+    margin: 0;
+    margin-top: 94px !important;
+    max-width: 7.3125rem !important;
+}
+.p-home-m-features__content {
+    margin-bottom: 3rem !important;
+    max-width: 25.6875rem;
+}
+
+
+
+
+
+
+
+
+ }
+ @media (max-width: 425px){
+    .container {
+        max-width: 90% !important;
+       
+        margin: 0 auto;
+    
+    }
+     .home-page-title{
+         display: none ;
+     }  
+     .dispaly-icon{
+        display: block !important;
+    }
+    /* section1 */
+
+    .p-home-m-welcome__title {
+        color: #fff;
+      
+        font-size: 2.5rem !important;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 1.5;
+        margin: 0 0 1rem;
+    }
+    .com-c-description {
+        font-size: 1.2rem !important;
+    }
+    .p-home-m-welcome__img {
+        width: 100% !important;
+    }
+    .Start_Trading {
+        font-size: 14px;
+        height: 40px !important;
+        text-transform: capitalize;
+    }
+    .p-home-m-welcome__content {
+        margin-bottom: 2rem !important;
+        max-width: 29.6875rem;
+    }
+    /* section1 close */
+    /* section2 */
+    .p-home-m-new-features-c-card_color_positive {
+        background-color: #1fbf75;
+        height: 200% !important;
+        width: 100% !important;
+        overflow: hidden;
+        margin-top: 10%;
+    }
+    .p-home-m-new-features__card_size_small_img4 {
+        /* max-width: 25.5rem;
+        min-height: 16.3125rem; */
+        margin-top: 92%;
+        width: 100%;
+    }
+   .p-home-m-new-features-c-card_type_experience .p-home-m-new-features-c-card__back {
+    background-position: 36px -70% !important;
+    background-size: 141% !important;
+}
+.p-home-m-new-features__card_size_small {
+    max-width: 24.5rem !important;
+    min-height: 11.3125rem;
+}
+.com-c-title {
+    font-size: 1.5rem !important;
+    line-height: 1.33;
+}
+.p-home-m-devices__reviews-desc {
+    margin: -44px 0 2rem;
+    padding-left: 0 !important;
+}
+.p-home-m-devices__review-container {
+    margin-top: 2rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+    max-width: 100% !important;
+    /* margin: auto; */
+}
+.p-home-m-devices__review-card {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.p-home-m-devices-c-apps {
+    /* margin-right: -1.5rem; */
+    max-width: 100%;
+    display: flow-root !important;
+    text-align: center;
+}
+.p-home-m-devices-c-apps_btn {
+    /* margin-right: -1.5rem; */
+    max-width: 100%;
+    display: inline-flex !important;
+    text-align: center;
+}
+
+
+/* section5 */
+.p-home-m-features__card {
+    background-color: #172331;
+    border-radius: 1.25rem;
+    justify-content: flex-end;
+    margin-bottom: 1.25rem;
+    max-width: 16rem;
+    min-height: 12.3125rem !important;
+    padding-bottom: 0;
+    padding-top: 1.875rem;
+    width: 45%;
+    margin-right: 5%;
+}
+.p-home-m-features__card-title {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: .04em;
+    line-height: 1.33;
+    margin: 0;
+    margin-top: 94px !important;
+    max-width: 7.3125rem !important;
+}
+.p-home-m-features__content {
+    margin-bottom: 3rem !important;
+    max-width: 25.6875rem;
+}
+/* section6 */
+.p-home-m-payments__item {
+    /* height: 0; */
+    padding: 13.35% 0 !important;
+    width: calc(48.66667% - 1.5rem) !important;
+}
+.p-home-m-payments__item a{
+    margin: auto;
+    position: absolute;
+    top: 15px !important;
+   
+    border-radius: 12%;
+}
+
+/* section7 */
+.slide2_img{
+    border-radius: 12%;
+    width: 100% !important;
+    height: 429px;
+ }
+
+ 
+
+
+/* platform */
+.sentiment {
+    width: .8125rem;
+}
+
+.asset-button {
+    align-content: center;
+    background-color: #203146;
+    border: 0.0625rem solid;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 0px !important;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.account-balance__content{
+    display: none ;
+}
+.l-navbar{
+    position: fixed;
+    top: 0;
+    left:-3% !important;
+  
+    transition: 0.5s;
+   
+}
+
+.Button-module-host-2B_res{
+    align-items: center;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.25;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 10px 17px;
+   
+}
+.color-fff{
+    color: #fff !important;
+}
+
+.chart .main-chart-container {
+    z-index: 0;
+}
+.trade-frame__content img{
+    height: 500px;
+    width: 100%;
+}
+
+
+/* aboutus */
+.about__title{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 3rem !important;
+    line-height: 4rem !important;
+}
+.about__image {
+       top: 80px !important;
+}
+.about__image img {
+    max-width: 100% !important;
+  
+}
+
+.page__section {
+    margin-bottom: 5.375rem !important;
+    margin-top: 5.375rem !important;
+}
+.about-oly-num {
+    font-size: 1.75rem !important;
+
+    font-weight: 600;
+}
+.about_statistics__card-description {
+    font-size:14px !important;
+    line-height: 1rem;
+   
+}
+.about_statistics__card-title {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;  
+}
+.about_statistics__card {
+    padding:10px 10px !important;
+    
+}
+.about-countries {
+    background-image: url(bg-countries-ful.png);
+    background-repeat: no-repeat;
+    color: #fff;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 0rem !important;
+    padding-top: 0rem !important;
+    background-position: 80% 0 !important;
+    /* box-sizing: border-box; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    font-family: "Roboto", sans-serif;
+    position: relative;
+}
+.about-countries__description {
+    margin-left: 0% !important;
+    margin-top: 40% !important;
+    min-width: 100% !important;
+    margin-bottom: 0% !important;
+    display: flex;
+    flex-direction: column;
+}
+.about-countries-list{
+    grid-row-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr !important; 
+}
+.about-countries__description-text {
+    font-size: 1rem !important;
+}
+.about-countries__title {
+    font-size: 2rem !important;
+
+}
+.about-support-c-statistic__value {
+    font-size: 1.25rem !important;
+  
+}  
+.about-support-c-statistic__description {
+    color: #a5bdd9;
+    font-size: 14px !important;
+    line-height: 2rem;
+}
+.page-m-socials-c-card{
+    background-color: #172331;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    padding: 2.5rem 0.5625rem !important;
+}
+.com-footer-bottom__content{
+    display: block;
+}
+.platform-side-right{
+    width: 8% !important;
+}
+.platform-side-left{
+    width: 100% !important;
+}
+.header-left{
+    width: 100% !important;
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+}
+.platform-select{
+    width: 40%;
+}
+.asset-button__title {
+    color: #fff;
+    flex-grow: 1;
+    font-size: 10px !important;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.asset-item-badge {
+    background-color: var(--high-alpha);
+    border-radius: 0.5rem;
+    color: #fff;
+    display: block !important;
+    margin-top: 7px !important;
+    font-size: 10px !important;
+}
+.asset-button{
+    
+    padding: 11px 5px !important;
+}
+.account-balance__title {
+    align-items: center;
+    display: flex;
+    font-size: 10px !important;
+}
+.desktop{
+    display:none !important;
+}
+.mobile{
+    display: block !important;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    top: 0;
+    left: 0 !important;
+    width: 100%;
+}
+.nav_list{
+    display: flex;
+    justify-content: space-evenly
+    
+}
+.l-navbar1{
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #203146;
+}
+.nav_link1 {
+    position: relative;
+    color: #5b728c;
+    display: grid;
+    align-items: center;
+    font-size: 20px;
+    padding:20px;
+    transition: 0.3s;
+}
+.layout__body-desktop{
+    display: none !important;
+}
+.layout__body-moblie{
+    display: block !important;
+}
+.trade-frame__content img {
+    height: 200px !important;
+}
+#body-pd{
+    background-color: #172331; 
+    height: 600px;
+}
+
+/* helpcenter */
+
+.help-divs {
+    display: grid;
+    grid-gap: 16px;
+    text-align: left;
+    -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr;
+    grid-template-columns: repeat(2,1fr);
+}
+.flogicon img {
+    width: 25%;
+    margin-right: 10px;
+}
+.com-footer-c-nav-link {
+    padding: 10px 0;
+    color: #a5bdd9;
+    margin-right: 10%;
+    margin-bottom: 0;
+    text-decoration: none;
+    transition: color .2s ease-out;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+ @media (max-width: 375px){
+     .home-page-title{
+         display: none ;
+     } 
+      /* section1 */
+
+    /* section1 close */
+    /* section2 */
+
+ /* platform */
+ .sentiment {
+    width: .8125rem;
+}
+
+.asset-button {
+    
+    padding: 8px 0px !important;
+   
+}
+
+.account-balance__content{
+    display: none;
+}
+
+.Button-module-host-2B_res{
+    padding: 10px 17px;
+   
+}
+.color-fff{
+    color: #fff !important;
+}
+
+.chart .main-chart-container {
+    z-index: 0;
+}
+.trade-frame__content img{
+    height: 500px !important;
+    width: 100%;
+}
+
+.about__title {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 2rem !important;
+    line-height: 3rem !important;
+}
+.com-footer-bottom__content{
+    display: block;
+}
+.about-olymp__link {
+    color: #a5bdd9;
+    font-size: 12px !important;
+    
+}
+
+
+
+ }
+
+
+
+
+
+
+
+
+ @media (max-width: 320px){
+      /* section1 */
+
+
+    
+    /* section1 close */
+     
+ /* platform */
+
+ .l-navbar{
+    position: fixed;
+    top: 0;
+    left: -5% !important;
+    transition: 0.5s;
+}
+.sentiment {
+    width: .8125rem;
+}
+
+.asset-button {
+  
+    padding: 8px 0px !important;
+   
+}
+
+.account-balance__content{
+    display: none;
+}
+
+.Button-module-host-2B_res{
+    padding: 10px 17px;
+   
+}
+.color-fff{
+    color: #fff !important;
+}
+
+.chart .main-chart-container {
+    z-index: 0;
+}
+.trade-frame__content img{
+    height: 500px !important;
+    width: 100%;
+}
+
+.about__title {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 1.5rem !important;
+    line-height: 3rem !important;
+}
+.about-olymp__link {
+    color: #a5bdd9;
+    font-size: 12px !important;
+    
+}
+
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+	
+	
+	
+	.container,
+	
+	.container-sm {
+	
+	max-width: 540px;
+	
+	}
+
+	
+	}
+	
+	
+	
+	@media (min-width: 768px) {
+	
+	
+	
+	.container,
+	
+	.container-sm,
+	
+	.container-md {
+	
+	max-width: 720px;
+	
+	}
+    
+	
+	}
+	
+	
+	
+	@media (min-width: 992px) {
+	
+	
+	
+	.container,
+	
+	.container-sm,
+	
+	.container-md,
+	
+	.container-lg {
+	
+	max-width: 960px;
+	
+	}
+	
+	}
+	
+	
+	
+	@media (min-width: 1200px) {
+	
+	
+	
+	.container,
+	
+	.container-sm,
+	
+	.container-md,
+	
+	.container-lg,
+    
+	
+	.container-xl {
+	
+	max-width: 1140px;
+	
+	}
+	
+	}
+    @media (min-width: 1400px) {
+	
+	
+	
+        .container,
+        
+        .container-sm,
+        
+        .container-md,
+        
+        .container-lg,
+        
+        .container-xl {
+        
+            max-width: 1140px;
+        
+        }
+        
+        }

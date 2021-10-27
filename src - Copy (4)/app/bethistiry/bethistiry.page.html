@@ -1,0 +1,596 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>platform</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="container-fluid " id="body-pd" style="background-color: #172331; height: 800px;">
+  <ion-grid>
+    <ion-row>
+      <ion-col size-lg="1" size-md="1" size-xs="1">
+        <!-- <div id="body-pd"> -->
+  
+          <div class="l-navbar" id="nav-bar">
+              <nav class="nav">
+                  <!-- <ul>  -->
+                    <a href="#" class="nav_logo">
+                      <div class="oln0OoVZ _2DadDvOx">
+                        <div class="_1Cwk--EN"><svg class="_2vf5MdoZ" viewBox="0 0  28 25" xmlns="http://www.w3.org/2000/svg">
+                          <path clip-rule="evenodd" d="M5.46 24.68l3.91-5.12a.28.28 0 000-.38 7 7 0 013-12 7 7 0 016.31 12 .259.259 0 000 .38l3.9 5.12a.3.3 0 00.44.05 14 14 0 005-10.28A14.19 14.19 0 0014.23 0 14 14 0 005 24.73a.29.29 0 00.46-.05z" fill="currentColor" fill-rule="evenodd"></path>
+                        </svg><img alt="" class="pNvLDACZ" src="https://cdn1.olymptrade.com/v5/public/images/logo_gem.9561784b.png"></div></div>
+                    </a>
+                      <div class="nav_list">
+                          <a href="#" class="nav_link ">
+                            <i class="fa fa-arrows-alt" style="font-size:24px"></i>
+                           <span class="nav_name">Traders</span>
+                           </a>
+                            <a href="#" class="nav_link">
+                                
+                                <i class="fa fa-envelope" aria-hidden="true" style="font-size: 24px;"></i>
+                              
+                                <span class="nav_name">Market</span>
+                               </a> 
+                                <a href="#" class="nav_link">
+                                  
+                                  <i class="fa fa-trophy" aria-hidden="true" style="font-size: 24px;"></i>
+                            
+                                      <span class="nav_name">Events</span>
+                                     </a>
+                                      <a href="#" class="nav_link">
+                                        <i class="fa fa-question-circle" aria-hidden="true" style="font-size: 24px;"></i>
+                                 
+                                         <span class="nav_name">Help</span> 
+                                        </a> 
+                                        <a href="#" class="nav_link"> 
+                                          <i class="fa fa-cog" style="font-size: 24px;"></i>
+                                     
+                                          <span class="nav_name">Settings</span>
+                                        </a> 
+                                        <a href="#" class="nav_link">
+                                           <span>15262</span>
+                                           <span class="nav_name">online</span>
+                                           </a>
+                                           </div>
+                          <!-- </ul> -->
+                    
+              </nav>
+          </div>
+          <!--Container Main start-->
+          
+          <!-- </div> -->
+      </ion-col>
+      <ion-col size-lg="11" size-md="11" size-xs="11">
+        <div class="layout__main">
+      <div class="layout__header">
+       <header dir="ltr" class="header com-header-platform">
+      <div class="header__bar-items">
+        <!-- <li class="satir-graph-settings__item" style="opacity: 1;"> -->
+          <button class="ButtonBase-module-host-3Fo asset-button asset-button_on-platform" >
+            <div class="asset-button__container"><span class="pair-icon-image asset-button__icon" data-test="pair-name-eurusd" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/pair-icon-eurusd.c0b4e5eb.svg&quot;);">
+            </span>
+            <div class="asset-button__title">EUR/USD</div>
+          </div>
+          <div class="asset-button__subtitle">
+            <span class="asset-item-badge asset-item-badge_large asset-item-badge_huge" >
+              <span dir="ltr" class="">82%</span>
+            </span>
+          </div>
+        </button>
+        <!-- </li> -->
+        <span><p style="color:white;">{{livedata}}</p></span>
+        <select name="" id="">
+          <option value=""*ngFor = "let s of stocks">{{s.name}}</option>
+        </select>
+        <a class="ButtonBase-module-host-3Fo account-balance">
+          <div class="account-balance__content">
+            <div class="account-balance__title account-balance__title_accent">Demo account</div>
+            <div class="account-balance__amount" >
+              <span dir="ltr" class="">{{amount}}</span>
+              <div class="account-balance__icon">
+                <svg class="SvgIcon-module-host-3SE" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                  <path fill="currentColor" fill-rule="evenodd" d="M7.293 9.293a1 1 0 000 1.414l4 4a1 1 0 001.414 0l4-4a1 1 0 00-1.414-1.414L12 12.586 8.707 9.293a1 1 0 00-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </a>
+        <button class="ButtonBase-module-host-3Fo Button-module-host-2B_ Button-module-hostSizeLarge-2qd Button-module-hostVariantContained-3Vs Button-module-hostColorContainedAccent-24t c-recharge-button btn-display payment-d-block" >
+          <span class="Button-module-itemContent-27x">
+            <span class="Button-module-itemTextAlignCenter-2Ok">
+            <span data-trans="payments">Payments</span>
+            
+          </span>
+        </span>
+      </button>
+      <button class="ButtonBase-module-host-3Fo Button-module-host-2B_  Button-module-host-2B_res Button-module-hostSizeMedium-5Y1 Button-module-hostVariantContained-3Vs Button-module-hostColorContainedAccent-24t c-recharge-button btn-display_resp payment-d-none" data-test="recharge-tooltip-toggle-button">
+        <span class="Button-module-itemContent-27x">
+          <span class="Button-module-itemTextAlignCenter-2Ok color-fff">
+            <svg class="SvgIcon-module-host-3SE color-fff" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+              <path fill="currentColor" fill-rule="evenodd" d="M17 4.775a1 1 0 00-1.316-.949L9.162 6H17V4.775zM19 6V4.775a3 3 0 00-3.949-2.846l-11 3.666A3 3 0 002 8.442V17a3 3 0 003 3h14a3 3 0 003-3V9a3 3 0 00-3-3zM5 8a1 1 0 00-1 1v8a1 1 0 001 1h14a1 1 0 001-1V9a1 1 0 00-1-1H5z" clip-rule="evenodd"></path><path fill="currentColor" d="M16 13a1 1 0 111.998 0A1 1 0 0116 13z"></path></svg>
+            </span>
+          </span>
+        </button>
+  
+      <div class="pro-w-profile pro-w-profile_with-left-block" >
+        <div class="pro-w-profile__content" role="button">
+          <div class="tra-way-w-progress-small pro-w-profile__left">
+            <div class="tra-way-w-progress-small__status"><img src="https://cdn1.olymptrade.com/v5/public/images/starter.34ba090e.svg" alt="" class="tra-way-w-progress-small__status-image">
+              <span>1</span>
+            </div>
+            <div class="LinearProgress-module-host-1EA LinearProgress-module-hostSizeMedium-2fR LinearProgress-module-hostColorAccent-2cZ tra-way-w-progress-small__line" style="color: rgb(0, 148, 255);">
+              <div class="LinearProgress-module-itemBarContainer-25-">
+                <div class="LinearProgress-module-itemBarInverseContainer-1vR">
+                  <div class="LinearProgress-module-itemBar-3Tz LinearProgress-module-itemBarHasAnimation-_rI" style="transform: translateX(0%);">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pro-c-avatar pro-c-avatar_type_rectangle pro-w-profile__right dropdown">
+         
+            <div class="pro-c-avatar__content dropdown-toggle" data-toggle="dropdown">
+             <svg class="SvgIcon-module-host-3SE pro-c-avatar__placeholder" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                <path fill="currentColor" fill-rule="evenodd" d="M12 3a5 5 0 00-3.456 8.613c-1.895.74-3.174 2.046-4.01 3.346a10.917 10.917 0 00-1.506 3.789l-.013.075-.003.023-.001.008v.005a1 1 0 001.979.285v-.007l.008-.042.036-.186a8.914 8.914 0 011.182-2.868C7.197 14.514 8.91 13 12 13c3.091 0 4.802 1.514 5.784 3.04a8.915 8.915 0 011.218 3.055l.006.035.001.007.001.005v.002a1 1 0 001.98-.285v-.006l-.002-.007-.003-.023a7.202 7.202 0 00-.063-.333 10.92 10.92 0 00-1.455-3.53c-.837-1.301-2.116-2.608-4.01-3.347A5 5 0 0012 3zM9 8a3 3 0 116 0 3 3 0 01-6 0z" clip-rule="evenodd"></path>
+              </svg> 
+            </div>
+            <!-- <ion-icon name="caret-down-outline" style="color: white; font-size: 20px;"></ion-icon> -->
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">BetHisstiry</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </div>
+        </div>
+        <div class="pro-w-profile-c-notification pro-w-profile-c-notification_type_default pro-w-profile__notifications">
+          <span class="pro-w-profile-c-notification__content pro-w-profile-c-notification__content_animatable" data-blink="true">1</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  </div>
+        </div>
+        <div class="layout__body"> 
+          <!-- <div class="platform-container-trading">
+            <div class="platform-container-trading__main">
+              <div class="platform-container-trading__frames">
+                <div class="trade-frame trade-frame_count-1 trade-frame_no-multigraph"> -->
+                  <!-- <div class="trade-frame__section"> -->
+                    <ion-row>
+                    <ion-col  size-lg="11" size-md="9" size-xs="7">
+                     
+                      <div class="js-main-chart-container main-chart-container main-chart-container_has-sentiment">
+                        
+                          <div class="sentiment" data-test="55" style="display: none;">
+                            <div class="sentiment--text sentiment--text__up">45%</div>
+                            <div class="sentiment--rects">
+                              <div class="sentiment--rect sentiment--rect__up" style="height: 45%; transform: scaleX(1);">
+                              </div>
+                              <div class="sentiment--circle sentiment--circle__up" style="opacity: 0; transform: translateY(134.1px) scale(0);">
+                              </div>
+                              <div class="sentiment--circle sentiment--circle__up" style="opacity: 0; transform: translateY(134.1px) scale(0);">
+                              </div><div class="sentiment--circle sentiment--circle__up" style="opacity: 0; transform: translateY(134.1px) scale(0);"></div>
+                              <div class="sentiment--circle sentiment--circle__up" style="opacity: 0; transform: translateY(134.1px) scale(0);"></div>
+                              <div class="sentiment--circle sentiment--circle__up" style="opacity: 0; transform: translateY(134.1px) scale(0);"></div>
+                              <div class="sentiment--circle sentiment--circle__up" style="opacity: 0; transform: translateY(134.1px) scale(0);"></div>
+                              <div class="sentiment--rect sentiment--rect__down" style="transform: scaleX(1);"></div>
+                              <div class="sentiment--circle sentiment--circle__down" style="opacity: 0; transform: translateY(-163.9px) scale(0);"></div>
+                              <div class="sentiment--circle sentiment--circle__down" style="opacity: 0; transform: translateY(-163.9px) scale(0);"></div>
+                              <div class="sentiment--circle sentiment--circle__down" style="opacity: 0; transform: translateY(-163.9px) scale(0);"></div>
+                              <div class="sentiment--circle sentiment--circle__down" style="opacity: 0; transform: translateY(-163.9px) scale(0);"></div>
+                              <div class="sentiment--circle sentiment--circle__down" style="opacity: 0; transform: translateY(-163.9px) scale(0);"></div>
+                              <div class="sentiment--circle sentiment--circle__down" style="opacity: 0; transform: translateY(-163.9px) scale(0);"></div>
+                            </div><div class="sentiment--text sentiment--text__down">55%</div></div>
+                        
+                        <div class="chart-status chart-status_online" style="display: none;">
+                          <div class="chart-status__inner">
+                            <div class="chart-status__label"></div>
+                            <span class="chart-status__title">online EUR/USD</span><span class="chart-status__time">21.09.2021 10:52:59</span></div>
+                          </div>
+                        <div class="trade-frame__content" style="display: none;">
+                          <img src="../../assets/images/platform_screen.png" alt="">
+                        </div>
+                      </div>
+
+                      <!-- table -->
+                      <div class="table-bet">
+                        <table>
+                          <thead>
+                            <tr >
+                              <th>Market Name</th>
+                              <th>Payout</th>
+                              <th>amount</th>
+                              <th>P/L</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <!-- <tr *ngFor = "let c of completedbets">
+                              <td >{{c.market}}</td>
+                              <td >{{c.duration.payout}}</td>
+                              <td >{{c.betamount}}</td>
+                              <td >{{c.profitloss}}</td>
+                            </tr> -->
+                            <tr >
+                              <td>Market Name</td>
+                              <td>Payout</td>
+                              <td>amount</td>
+                              <td>P/L</td>
+                            </tr>
+                            <tr >
+                              <td>Market Name</td>
+                              <td>Payout</td>
+                              <td>amount</td>
+                              <td>P/L</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </ion-col>
+  
+                    <ion-col  size-lg="1" size-md="3" size-xs="5" style="display: none;">
+                      <div class="trade-frame__form " dir="ltr ">
+                        <div class="RwQF7Tul RwQF7Tul_block">
+                          <div class="veWhNIu9">
+                        <h4 class="znGx_VAA" title="EUR/USD">EUR/USD</h4>
+                        <span class="qWZ_2CaQ" data-test="trade-form-project-name">Fixed Time</span>
+                      </div><aside class="bpIb8v2S">
+                        <a class="T3BJuKNq" aria-label="Open asset">
+                        <svg class="SvgIcon-module-host-3SE" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                          <path fill="currentColor" fill-rule="evenodd" d="M12 4a8 8 0 100 16 8 8 0 000-16zM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12z" clip-rule="evenodd"></path><path fill="currentColor" d="M12.998 8A1 1 0 1111 8a1 1 0 011.998 0z"></path>
+                          <path fill="currentColor" fill-rule="evenodd" d="M10 11a1 1 0 011-1h2v6a1 1 0 11-2 0v-4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        </a>
+                      </aside>
+                         </div>
+                          <div class="deal-form-animation-container-wrapper">
+                            <div class="deal-form-animation-container">
+                              <div class="deal-form-alpha">
+                              <div class="deal-form-alpha__block">
+                                <div>
+                                  <div class="input-with-step">
+                                <div class="TextField-module-host-EUb input-with-step__input">
+                                  <div class="TextField-module-container-3uI input-with-step__content">
+                                    <div class="TextField-module-input-33Q input-with-step__input-wrapper">
+                                      <input class="InputBase-module-host-2uq TextField-module-nativeInput-2ot TextField-module-nativeInput_labeled-3uw TextField-module-nativeInput_filled-1nX TextField-module-nativeInput_size_medium-22D input-with-step__input-base" type="text" placeholder="0" data-test="deal-amount-input" [(ngModel)]="input_amount">
+                                      <label class="TextField-module-label-12D">
+                                        <span data-trans="deal_form_amount_title">Amount</span>,
+                                         <span data-test="deal-form-amount-currency">Đ</span>
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="input-controls" data-test="deal-form-input-controls">
+                                  <button class="ButtonBase-module-host-3Fo input-controls__button" data-test="deal-form-input-controls-minus">
+                                    <svg class="SvgIcon-module-host-3SE" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                                      <path fill="currentColor" fill-rule="evenodd" d="M7 12a1 1 0 011-1h8a1 1 0 110 2H8a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                                    </svg>
+                                  </button>
+                                  <button class="ButtonBase-module-host-3Fo input-controls__button" data-test="deal-form-input-controls-plus">
+                                    <svg class="SvgIcon-module-host-3SE" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                                      <path fill="currentColor" fill-rule="evenodd" d="M12 7a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H8a1 1 0 110-2h3V8a1 1 0 011-1z" clip-rule="evenodd"></path>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="deal-form-alpha__block">
+                              <div>
+                                <div class="">
+                                  <div>
+                                    <div class="duration-input">
+                                      <div class="TextField-module-host-EUb">
+                                        <div class="TextField-module-container-3uI">
+                                          <div class="TextField-module-input-33Q">
+                                            <select name="" id="" (change)="pay_out($event)" class="InputBase-module-host-2uq TextField-module-nativeInput-2ot TextField-module-nativeInput_labeled-3uw TextField-module-nativeInput_filled-1nX TextField-module-nativeInput_size_medium-22D">
+                                              <option value="{{t.id}}" *ngFor = "let t of timers">{{t.timer}}</option>
+                                            </select>
+                                          <!-- <input class="InputBase-module-host-2uq TextField-module-nativeInput-2ot TextField-module-nativeInput_labeled-3uw TextField-module-nativeInput_filled-1nX TextField-module-nativeInput_size_medium-22D" type="text" data-test="deal-duration-input" dir="ltr" value="1 min"> -->
+                                          <label class="TextField-module-label-12D">
+                                            <span data-trans="duration">Duration</span>
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="input-controls" data-test="deal-form-input-controls">
+                                    <button class="ButtonBase-module-host-3Fo input-controls__button" tabindex="-1" disabled="" data-test="deal-form-input-controls-minus">
+                                      <svg class="SvgIcon-module-host-3SE" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                                        <path fill="currentColor" fill-rule="evenodd" d="M7 12a1 1 0 011-1h8a1 1 0 110 2H8a1 1 0 01-1-1z" clip-rule="evenodd">
+  
+                                        </path>
+                                      </svg>
+                                    </button>
+                                    <button class="ButtonBase-module-host-3Fo input-controls__button" data-test="deal-form-input-controls-plus">
+                                      <svg class="SvgIcon-module-host-3SE" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                                      <path fill="currentColor" fill-rule="evenodd" d="M12 7a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H8a1 1 0 110-2h3V8a1 1 0 011-1z" clip-rule="evenodd">
+                                        
+                                      </path>
+                                    </svg>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="deal-form-alpha__block deal-form-alpha__block_buttons deal-form-alpha__block_buttons-count-1">
+                            <div class="deal-form-alpha-buttons-block"><div class="deal-form-alpha-buttons-block__item">
+                              <div class="switch-button deal-form-mode-button-wrapper"><div class="switch-button__content switch-button__content_top">
+                                <button class="ButtonBase-module-host-3Fo Button-module-host-2B_1 Button-module-hostSizeLarge-2qd Button-module-hostVariantContained-3Vs Button-module-hostColorContainedDefault-2x8 Button-module-hostHasFullWidth-1jz deal-form-mode-button switch-button__item" data-test="order-form-button-open">
+                                  <span class="Button-module-itemContent-27x">
+                                    <span class="Button-module-itemTextAlignLeft-3qM switch-button__item-text">
+                                      <div class="deal-form-mode-button_animation">
+                              <span data-trans="deal_order">Order</span>
+                            </div>
+                          </span>
+                          <span class="Button-module-itemEndIcon-1av deal-form-mode-button__end-icon switch-button__item-icon">
+                            <svg class="SvgIcon-module-host-3SE" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                              <path fill="currentColor" fill-rule="evenodd" d="M12 4a8 8 0 100 16 8 8 0 000-16zM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12zm10-6a1 1 0 011 1v4.586l2.207 2.207a1 1 0 01-1.414 1.414l-2.441-2.441a1.2 1.2 0 01-.352-.849V7a1 1 0 011-1z" clip-rule="evenodd">
+  
+                              </path>
+                            </svg>
+                          </span>
+                        </span>
+                      </button>
+                        <button class="ButtonBase-module-host-3Fo Button-module-host-2B_1 Button-module-hostSizeLarge-2qd Button-module-hostVariantContained-3Vs Button-module-hostColorContainedDefault-2x8 Button-module-hostHasFullWidth-1jz deal-form-mode-button switch-button__item" data-test="order-form-button-cancel" title="Cancel">
+                                <span class="Button-module-itemContent-27x">
+                                  <span class="Button-module-itemTextAlignLeft-3qM switch-button__item-text">
+                                    <div class="deal-form-mode-button_animation deal-form-mode-button__text">
+                                      <span data-trans="cancel">Cancel</span>
+                                    </div>
+                                  </span>
+                                  <span class="Button-module-itemEndIcon-1av deal-form-mode-button__end-icon switch-button__item-icon">
+                                    <svg class="SvgIcon-module-host-3SE" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                                      <path fill="currentColor" fill-rule="evenodd" d="M5.293 5.293a1 1 0 011.414 0L12 10.586l5.293-5.293a1 1 0 111.414 1.414L13.414 12l5.293 5.293a1 1 0 01-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 01-1.414-1.414L10.586 12 5.293 6.707a1 1 0 010-1.414z" clip-rule="evenodd">
+  
+                                      </path>
+                                    </svg>
+                                  </span>
+                                </span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <p style="color:white;">{{payout}}</p>
+                    </div>
+                    <div class="deal-form-alpha__block deal-form-alpha__block_no-padding">
+                      <div class="deal-buttons js_tu_deal_buttons deal-buttons_count-1">
+                        <button class="ButtonBase-module-host-3Fo deal-button deal-button_has-subtitle deal-button_up" data-test="deal-button-up" (click)="placebet_up()">
+                          <div class="deal-button__content deal-button__content_left">
+                            <div class="deal-button__title deal-button-animation deal-button-animation__title-appear-done deal-button-animation__title-enter-done"><div>
+                              <span data-trans="deals_upper">Up</span>
+                            </div>
+                          </div>
+                          <div class="deal-button__sub-title">
+                            <div class="deal-button__sub-title-value deal-button-animation deal-button-animation__sub-title">
+                              <div class="tick">+82%</div>
+                              <div class="deal-button__icon_additional deal-button__icon_additional_">
+                                <svg class="SvgIcon-module-host-3SE" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                                  <path fill="currentColor" fill-rule="evenodd" d="M17.707 10.707a1 1 0 000-1.414l-5-5a1 1 0 00-1.414 0l-5 5a1 1 0 001.414 1.414L11 7.414V19a1 1 0 102 0V7.414l3.293 3.293a1 1 0 001.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="deal-button__content deal-button__content_right">
+                          <div class="switch-button">
+                            <div class="switch-button__content switch-button__content_top">
+                              <div class="deal-button__icon deal-button__icon_main deal-button-animation deal-button-animation__icon deal-button-animation__icon_main-appear-done deal-button-animation__icon_main-enter-done">
+                                <svg class="SvgIcon-module-host-3SE" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                                  <path fill="currentColor" fill-rule="evenodd" d="M7 8a1 1 0 010-2h10a1 1 0 011 1v10a1 1 0 11-2 0V9.414l-8.293 8.293a1 1 0 01-1.414-1.414L14.586 8H7z" clip-rule="evenodd">
+  
+                                  </path>
+                                </svg>
+                              </div>
+                              <div class="deal-button__icon">
+                                <div class="deal-button__icon">
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                      <button class="ButtonBase-module-host-3Fo deal-button deal-button_has-subtitle deal-button_down" data-test="deal-button-down" (click)="placebet_down()">
+                        <div class="deal-button__content deal-button__content_left">
+                          <div class="deal-button__title deal-button-animation deal-button-animation__title-appear-done deal-button-animation__title-enter-done"><div>
+                            <span data-trans="deals_lower">Down</span>
+                          </div>
+                        </div>
+                        <div class="deal-button__sub-title">
+                          <div class="deal-button__sub-title-value deal-button-animation deal-button-animation__sub-title">
+                            <div class="tick">+82%</div>
+                            <div class="deal-button__icon_additional deal-button__icon_additional_">
+                              <svg class="SvgIcon-module-host-3SE" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                                <path fill="currentColor" fill-rule="evenodd" d="M17.707 10.707a1 1 0 000-1.414l-5-5a1 1 0 00-1.414 0l-5 5a1 1 0 001.414 1.414L11 7.414V19a1 1 0 102 0V7.414l3.293 3.293a1 1 0 001.414 0z" clip-rule="evenodd"></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="deal-button__content deal-button__content_right">
+                        <div class="switch-button">
+                          <div class="switch-button__content switch-button__content_top">
+                          <div class="deal-button__icon deal-button__icon_main deal-button-animation deal-button-animation__icon deal-button-animation__icon_main-appear-done deal-button-animation__icon_main-enter-done">
+                            <svg class="SvgIcon-module-host-3SE" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                              <path fill="currentColor" fill-rule="evenodd" d="M7 16a1 1 0 100 2h10a1 1 0 001-1V7a1 1 0 10-2 0v7.586L7.707 6.293a1 1 0 00-1.414 1.414L14.586 16H7z" clip-rule="evenodd"></path>
+                            </svg>
+                          </div>
+                          <div class="deal-button__icon">
+                            <div class="deal-button__icon"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </ion-col>
+
+     </ion-row>
+     
+ 
+      
+    </div>
+      </ion-col>
+      </ion-row>
+  
+  </ion-grid>
+  <ion-grid style="display: none;">
+    <ion-row>
+      <ion-col>
+        <div class="table-bet">
+          <table>
+            <thead>
+              <tr>
+                <th>Market Name</th>
+                <th>Type</th>
+                <th>Payout</th>
+                <th>amount</th>
+                <th>Well/Less</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td >BTCUSD</td>
+                <td >DEBIT</td>
+                <td >1.7</td>
+                <td >100</td>
+                <td >0</td>
+              </tr>
+              <tr>
+                <td >BTCUSD</td>
+                <td >DEBIT</td>
+                <td >1.7</td>
+                <td >100</td>
+                <td >0</td>
+              </tr>
+              <tr>
+                <td >BTCUSD</td>
+                <td >DEBIT</td>
+                <td >1.7</td>
+                <td >100</td>
+                <td >0</td>
+              </tr>
+              <tr>
+                <td >BTCUSD</td>
+                <td >DEBIT</td>
+                <td >1.7</td>
+                <td >100</td>
+                <td >0</td>
+              </tr>
+              <tr>
+                <td >BTCUSD</td>
+                <td >DEBIT</td>
+                <td >1.7</td>
+                <td >100</td>
+                <td >0</td>
+              </tr>
+              <tr>
+                <td >BTCUSD</td>
+                <td >DEBIT</td>
+                <td >1.7</td>
+                <td >100</td>
+                <td >0</td>
+              </tr>
+              <tr>
+                <td >BTCUSD</td>
+                <td >DEBIT</td>
+                <td >1.7</td>
+                <td >100</td>
+                <td >0</td>
+              </tr>
+              <tr>
+                <td >BTCUSD</td>
+                <td >DEBIT</td>
+                <td >1.7</td>
+                <td >100</td>
+                <td >0</td>
+              </tr>
+              <tr>
+                <td >BTCUSD</td>
+                <td >DEBIT</td>
+                <td >1.7</td>
+                <td >100</td>
+                <td >0</td>
+              </tr>
+              <tr>
+                <td >BTCUSD</td>
+                <td >DEBIT</td>
+                <td >1.7</td>
+                <td >100</td>
+                <td >0</td>
+              </tr>
+              <tr>
+                <td >BTCUSD</td>
+                <td >DEBIT</td>
+                <td >1.7</td>
+                <td >100</td>
+                <td >0</td>
+              </tr>
+              <tr>
+                <td >BTCUSD</td>
+                <td >DEBIT</td>
+                <td >1.7</td>
+                <td >100</td>
+                <td >0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid> 
+  </div>
+  
+  
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+  
+  const showNavbar = (toggleId, navId, bodyId, headerId) =>{
+  const toggle = document.getElementById(toggleId),
+  nav = document.getElementById(navId),
+  bodypd = document.getElementById(bodyId),
+  headerpd = document.getElementById(headerId)
+  
+  // Validate that all variables exist
+  if(toggle && nav && bodypd && headerpd){
+  toggle.addEventListener('click', ()=>{
+  // show navbar
+  nav.classList.toggle('show')
+  // change icon
+  toggle.classList.toggle('bx-x')
+  // add padding to body
+  bodypd.classList.toggle('body-pd')
+  // add padding to header
+  headerpd.classList.toggle('body-pd')
+  })
+  }
+  }
+  
+  showNavbar('header-toggle','nav-bar','body-pd','header')
+  
+  /*===== LINK ACTIVE =====*/
+  const linkColor = document.querySelectorAll('.nav_link')
+  
+  function colorLink(){
+  if(linkColor){
+  linkColor.forEach(l=> l.classList.remove('active'))
+  this.classList.add('active')
+  }
+  }
+  linkColor.forEach(l=> l.addEventListener('click', colorLink))
+  
+  // Your code to run since DOM is loaded and ready
+  });
+  </script>
+  </ion-content>
+  

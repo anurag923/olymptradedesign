@@ -1,0 +1,15 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-bethistiry',
+  templateUrl: './bethistiry.page.html',
+  styleUrls: ['./bethistiry.page.scss'],
+})
+export class BethistiryPage implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

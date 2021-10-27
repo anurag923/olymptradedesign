@@ -1,0 +1,1354 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="container pt-2">
+      <ion-grid  class=" p-0 md hydrated">
+        <ion-row  class="md hydrated ">
+          <ion-col   size-lg="4" size-md="4" class="home-tabs md hydrated" style="">
+            <ion-title  class="heading  md title-default hydrated">
+              <div class="com-header__box ">
+                <a class="com-header__logo home-page-title" target="_self" rel="noopener noreferrer" href="olymptrade">
+                  <img src="../../assets/images/OLYMPUS.jpg" alt="">
+                </a>
+                <a href="" class="dispaly-icon">
+                  <ion-icon name="disc-outline"></ion-icon>
+                 </a>
+                  <ion-menu side="start" color="primary" content-id="main-content" class="dispaly-icon-menu">
+                    <ion-header>
+                      <ion-toolbar translucent class="mob">
+                        <ion-title>Menu</ion-title>
+                      </ion-toolbar>
+                    </ion-header>
+                    <ion-content>
+                      <ion-list>
+                        <ion-item>
+                          <ion-icon name="mail" slot="start"></ion-icon>
+                          <ion-label>Inbox</ion-label>
+                        </ion-item>
+                        <ion-item>
+                          <ion-icon name="paper-plane" slot="start"></ion-icon>
+                          <ion-label>Outbox</ion-label>
+                        </ion-item>
+                        <ion-item>
+                          <ion-icon name="heart" slot="start"></ion-icon>
+                          <ion-label>Favorites</ion-label>
+                        </ion-item>
+                        <ion-item>
+                          <ion-icon name="archive" slot="start"></ion-icon>
+                          <ion-label>Archived</ion-label>
+                        </ion-item>
+                        <ion-item>
+                          <ion-icon name="trash" slot="start"></ion-icon>
+                          <ion-label>Trash</ion-label>
+                        </ion-item>
+                        <ion-item>
+                          <ion-icon name="warning" slot="start"></ion-icon>
+                          <ion-label>Spam</ion-label>
+                        </ion-item>
+                      </ion-list>
+                    </ion-content>
+                  </ion-menu> 
+                  <div class="ion-page dispaly-icon" id="main-content" >
+                    <ion-header>
+                      <ion-toolbar>
+                        <ion-buttons slot="start">
+                          <ion-menu-button></ion-menu-button>
+                        </ion-buttons>
+                        <ion-title>Inbox</ion-title>
+                      </ion-toolbar>
+                    </ion-header>
+                    <ion-content class="ion-padding">
+                      <ion-button  onclick="openMenu()">Open Menu</ion-button>
+                    </ion-content>
+                  </div>
+              </div>
+
+            </ion-title>
+          </ion-col>
+          <ion-col  size-lg="4" size-md="4"  class="home-tabs md hydrated" >  
+             <nav class="com-header-links home-page-title">
+                <ul class="com-header-links__list">
+                  <!-- <li class="com-header-links__item">
+                    <a class="com-header-c-nav-link" href="#">
+                      <span >About Us</span>
+                    </a>
+                  </li> -->
+                  <li class="com-header-links__item">
+                    <a class="com-header-c-nav-link" href="help">
+                      <span >Help Center</span>
+                    </a>
+                  </li>
+                  <li class="com-header-links__item">
+                    <a class="com-header-c-nav-link" href="assets">
+                      <span >Assets</span>
+                    </a>
+                  </li>
+                  <li class="com-header-links__item">
+                    <a class="com-header-c-nav-link" href="#">
+                      <span>Insights</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        
+          </ion-col>
+          <ion-col  size-md="4" size-lg="4" class="home-tabs md hydrated btn-right" >
+            <div>
+              <!-- <ion-button  color="light" class="omp_login" slot="end" (click)="loginpage()">Login</ion-button> -->
+             <ion-button   color="primary" class="omp_login" slot="end">Start Trading</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>     
+      </ion-grid>
+      </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="container pt-4">
+  <ion-grid>
+    <ion-row class="assets-height"> 
+      <ion-col size-lg="4" size-md="4" size-xs="12">
+        <div class="assets-main-right">
+          <div class="assets-right-inner">
+            <div class="a-right-inner">
+              <h3 class="a-r-heading">Suggested Forecast</h3>
+              <span class="tooltip-trigger">
+                <span class="_1QO-Mzm">
+                  <!-- <svg class="SvgIcon-module-host-3SE _1MaCIq5 _1Pu-EW3" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true" data-role="icon"><path fill="currentColor" fill-rule="evenodd" d="M12 17a5 5 0 100-10 5 5 0 000 10zm.625-3.129h-1.164V15h1.164v-1.129zm-1.813-4.39c-.486.31-.746.835-.777 1.578h1.13c0-.217.062-.425.187-.625.127-.2.342-.301.644-.301.307 0 .518.082.633.246a.896.896 0 01.176.539c0 .172-.052.33-.157.473a.996.996 0 01-.226.23l-.285.223c-.282.219-.456.413-.524.582-.067.166-.11.47-.125.91h1.055c.003-.208.02-.362.05-.461a.84.84 0 01.302-.41l.277-.215c.281-.219.471-.398.57-.54.17-.23.254-.516.254-.855 0-.552-.195-.968-.586-1.25-.388-.28-.876-.421-1.465-.421-.448 0-.825.099-1.133.296z" clip-rule="evenodd"></path></svg> -->
+                  <i class="fa fa-question" style="font-size: 14px; color: #fff; border: 1px solid #fff;border-radius: 50%;width: 15px;height: 15px; padding-left: 2px;"></i>
+                </span>
+              </span>
+            </div>
+            <div class="a-r-text">
+              <span>The forecast updates in</span>
+              <time class="a-r-time">soon</time>
+            </div>
+            <a class="asset-info" href="#">
+              <div class="asset-info__header">
+                <h3 class="asset-info__title">NASDAQ</h3>
+                <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 2.5rem;">
+                  <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nq.img.svg" class="lazy-image pair-icon" height="2.5rem">
+                </span>
+              </div>
+              <div class="asset-info__content asset-info__content_up">
+                <span class="asset-info__expected-text">Expected rise of</span>
+                <div class="asset-info__expected-direction">
+                  <!-- <svg class="SvgIcon-module-host-3SE asset-info__expected-icon" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true" data-role="icon"><path fill="currentColor" d="M11.7 13.887c.172.15.428.15.6 0l3.54-3.078a.461.461 0 00-.3-.809H8.46a.461.461 0 00-.3.81l3.54 3.077z"></path></svg> -->
+                  <ion-icon name="caret-up-outline"></ion-icon>
+                  <span class="asset-info__expected-value">+0.37%</span>
+                </div>
+              </div>
+              <p class="asset-info__action">Buy now in order to sell with a profit at <strong>
+                <time class="asset-info__time">14:50 10/05/2021</time></strong>
+              </p>
+            </a>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col size-lg="8" size-md="8" size-xs="12">
+        <div class="hot-trends">
+          <div class="hot-trends__header flex-between">
+            <h3 class="h3">Trending</h3>
+          </div>
+          <!-- <div class="timeframes hot-trends__timeframes nav nav-tabs" role="tablist">
+            <button class="btn timeframe-button timeframe-button_is-available timeframe-button_is-selected btn_transparent btn_undefined" data-toggle="tab" href="#tabs-1" role="tab">1H</button>
+            <button class="btn timeframe-button timeframe-button_is-available btn_transparent btn_undefined">1D</button>
+            <button class="btn timeframe-button timeframe-button_is-available btn_transparent btn_undefined">1W</button>
+            <button class="btn timeframe-button timeframe-button_is-available btn_transparent btn_undefined">1M</button>
+          </div> -->
+            <!-- <div class="timeframes hot-trends__timeframes">
+            <a class="btn timeframe-button timeframe-button_is-available timeframe-button_is-selected btn_transparent btn_undefined">1H</a>
+            <a class="btn timeframe-button timeframe-button_is-available btn_transparent btn_undefined">1D</a>
+            <a class="btn timeframe-button timeframe-button_is-available btn_transparent btn_undefined">1W</a>
+            <a class="btn timeframe-button timeframe-button_is-available btn_transparent btn_undefined">1M</a>
+          </div> -->
+       <div class="timeframes hot-trends__timeframes">
+        <ul class="nav nav-tabs timeframes" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link timeframe-button timeframe-button_is-selected  active" data-toggle="tab" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link timeframe-button" data-toggle="tab" href="#menu1">Menu 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link timeframe-button" data-toggle="tab" href="#menu2">Menu 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link timeframe-button" data-toggle="tab" href="#menu3">Menu 3</a>
+          </li>
+        </ul>
+      
+        <!-- <div id="myTabs" class="nav1 nav-pills nav-justified " role="tablist" data-tabs="tabs" style="display:none;">
+         
+            <a class="timeframe-button timeframe-button_is-selected" href="#Commentary" data-toggle="tab">1H</a>
+         
+            <a class="btn timeframe-button" href="#Videos" data-toggle="tab">1D</a>
+          
+            <a class="btn timeframe-button" href="#Events" data-toggle="tab">1W</a>
+         
+            <a class="btn timeframe-button" href="#Events" data-toggle="tab">1M</a>
+         
+        </div>        -->
+      </div>
+      <div class="snap-slider hot-trends__overflow ">
+        <a class="snap-slider__button snap-slider__button_prev snap-slider__button_disabled btn_default btn_undefined">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </a>
+        <a class="snap-slider__button snap-slider__button_next btn_default btn_undefined">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </a>
+       
+       </div>
+       <div class="">
+        <ul class="nav nav-tabs timeframes" role="tablist" style="display: none;">
+          <li class="nav-item">
+            <a class="nav-link timeframe-button timeframe-button_is-selected  active" data-toggle="tab" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link timeframe-button" data-toggle="tab" href="#menu1">Menu 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link timeframe-button" data-toggle="tab" href="#menu2">Menu 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link timeframe-button" data-toggle="tab" href="#menu3">Menu 3</a>
+          </li>
+        </ul>
+      
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div id="home" class=" tab-pane active">
+            <div  class="snap-slider__list  hot-trends__list tab-content" >
+              <ion-slides pager="true" [options]="slideOptsThree" class="nodots">
+                <ion-slide class="nobullets">
+                
+                 <a class="hot-trend-item hot-trend-item_down" href="#">
+                  <div class="hot-trend-item__icon">
+                    <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                      <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-uvxy.img.svg" class="lazy-image pair-icon">
+                    </span>
+                  </div>
+                  <h4 class="hot-trend-item__title">ETF S&amp;P 500 Volatility 1.5x</h4>
+                  <div class="hot-trend-item__deviant">
+                    <ion-icon name="caret-down-outline"></ion-icon>
+                      -2.42%</div>
+                </a>
+                </ion-slide>
+                <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-uvxy.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">ETF S&amp;P 500 Volatility 1.5x</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                        -2.42%</div>
+                  </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-uvxy.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">ETF S&amp;P 500 Volatility 1.5x</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                        -2.42%</div>
+                  </a>
+                 </ion-slide >
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-bidu.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Baidu</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      -0.78%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide  class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-bidu.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Baidu</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      -0.78%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets" >
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-baba.img.svg" class="lazy-image pair-icon" >
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Alibaba</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                          -0.75%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets" >
+                  <a class="hot-trend-item hot-trend-item_up" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-ng.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Natural Gas</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>>+0.72%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide  class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                      </div>
+                      <h4 class="hot-trend-item__title">NINTENDO</h4>
+                      <div class="hot-trend-item__deviant">
+                        <ion-icon name="caret-down-outline"></ion-icon>
+                        -0.72%</div>
+                      </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_up" href="/en/assets/ltcusd?chartType=priceChange&amp;timeFrame=1H">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity" >
+                        <span class="lazy-image pair-icon">
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon">
+                        </span>
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Litecoin</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      +0.66%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets" >
+                  <a class="hot-trend-item hot-trend-item_up" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity" >
+                        <span class="lazy-image pair-icon" >
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Bitcoin</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      +0.58%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_up" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity" >
+                        <span class="lazy-image pair-icon" >
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                    </span>
+                  </div>
+                  <h4 class="hot-trend-item__title">Nikkei 225</h4>
+                  <div class="hot-trend-item__deviant">
+                    <ion-icon name="caret-down-outline"></ion-icon>
+                    +0.57%</div>
+                  </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity">
+                        <span class="lazy-image pair-icon">
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Platinum</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      -0.56%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_up" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity" >
+                        <span class="lazy-image pair-icon">
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Ethereum</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      +0.55%</div>
+                    </a>
+                 </ion-slide>              
+              </ion-slides>    
+           </div>
+          </div>
+          <div id="menu1" class=" tab-pane fade">
+            <div  class="snap-slider__list  hot-trends__list tab-content" >
+              <ion-slides pager="true" [options]="slideOptsThree" class="nodots">
+                <ion-slide class="nobullets">
+                
+                 <a class="hot-trend-item hot-trend-item_down" href="#">
+                  <div class="hot-trend-item__icon">
+                    <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                      <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-uvxy.img.svg" class="lazy-image pair-icon">
+                    </span>
+                  </div>
+                  <h4 class="hot-trend-item__title">ETF S&amp;P 500 Volatility 1.5x</h4>
+                  <div class="hot-trend-item__deviant">
+                    <ion-icon name="caret-down-outline"></ion-icon>
+                      -2.42%</div>
+                </a>
+                </ion-slide>
+                <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-uvxy.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">ETF S&amp;P 500 Volatility 1.5x</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                        -2.42%</div>
+                  </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-uvxy.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">ETF S&amp;P 500 Volatility 1.5x</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                        -2.42%</div>
+                  </a>
+                 </ion-slide >
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-bidu.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Baidu</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      -0.78%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide  class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-bidu.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Baidu</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      -0.78%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets" >
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-baba.img.svg" class="lazy-image pair-icon" >
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Alibaba</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                          -0.75%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets" >
+                  <a class="hot-trend-item hot-trend-item_up" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-ng.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Natural Gas</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>>+0.72%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide  class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                      </div>
+                      <h4 class="hot-trend-item__title">NINTENDO</h4>
+                      <div class="hot-trend-item__deviant">
+                        <ion-icon name="caret-down-outline"></ion-icon>
+                        -0.72%</div>
+                      </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_up" href="/en/assets/ltcusd?chartType=priceChange&amp;timeFrame=1H">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity" >
+                        <span class="lazy-image pair-icon">
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon">
+                        </span>
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Litecoin</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      +0.66%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets" >
+                  <a class="hot-trend-item hot-trend-item_up" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity" >
+                        <span class="lazy-image pair-icon" >
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Bitcoin</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      +0.58%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_up" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity" >
+                        <span class="lazy-image pair-icon" >
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                    </span>
+                  </div>
+                  <h4 class="hot-trend-item__title">Nikkei 225</h4>
+                  <div class="hot-trend-item__deviant">
+                    <ion-icon name="caret-down-outline"></ion-icon>
+                    +0.57%</div>
+                  </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity">
+                        <span class="lazy-image pair-icon">
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Platinum</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      -0.56%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_up" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity" >
+                        <span class="lazy-image pair-icon">
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Ethereum</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      +0.55%</div>
+                    </a>
+                 </ion-slide>              
+              </ion-slides>    
+           </div>
+          </div>
+          <div id="menu2" class=" tab-pane fade">
+            <div  class="snap-slider__list  hot-trends__list tab-content" >
+              <ion-slides pager="true" [options]="slideOptsThree" class="nodots">
+                <ion-slide class="nobullets">
+                
+                 <a class="hot-trend-item hot-trend-item_down" href="#">
+                  <div class="hot-trend-item__icon">
+                    <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                      <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-uvxy.img.svg" class="lazy-image pair-icon">
+                    </span>
+                  </div>
+                  <h4 class="hot-trend-item__title">ETF S&amp;P 500 Volatility 1.5x</h4>
+                  <div class="hot-trend-item__deviant">
+                    <ion-icon name="caret-down-outline"></ion-icon>
+                      -2.42%</div>
+                </a>
+                </ion-slide>
+                <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-uvxy.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">ETF S&amp;P 500 Volatility 1.5x</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                        -2.42%</div>
+                  </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-uvxy.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">ETF S&amp;P 500 Volatility 1.5x</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                        -2.42%</div>
+                  </a>
+                 </ion-slide >
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-bidu.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Baidu</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      -0.78%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide  class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-bidu.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Baidu</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      -0.78%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets" >
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-baba.img.svg" class="lazy-image pair-icon" >
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Alibaba</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                          -0.75%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets" >
+                  <a class="hot-trend-item hot-trend-item_up" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-ng.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Natural Gas</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>>+0.72%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide  class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                      </div>
+                      <h4 class="hot-trend-item__title">NINTENDO</h4>
+                      <div class="hot-trend-item__deviant">
+                        <ion-icon name="caret-down-outline"></ion-icon>
+                        -0.72%</div>
+                      </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_up" href="/en/assets/ltcusd?chartType=priceChange&amp;timeFrame=1H">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity" >
+                        <span class="lazy-image pair-icon">
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon">
+                        </span>
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Litecoin</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      +0.66%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets" >
+                  <a class="hot-trend-item hot-trend-item_up" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity" >
+                        <span class="lazy-image pair-icon" >
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Bitcoin</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      +0.58%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_up" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity" >
+                        <span class="lazy-image pair-icon" >
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                    </span>
+                  </div>
+                  <h4 class="hot-trend-item__title">Nikkei 225</h4>
+                  <div class="hot-trend-item__deviant">
+                    <ion-icon name="caret-down-outline"></ion-icon>
+                    +0.57%</div>
+                  </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity">
+                        <span class="lazy-image pair-icon">
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Platinum</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      -0.56%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_up" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity" >
+                        <span class="lazy-image pair-icon">
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Ethereum</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      +0.55%</div>
+                    </a>
+                 </ion-slide>              
+              </ion-slides>    
+           </div>
+          </div>
+          <div id="menu3" class=" tab-pane fade">
+            <div  class="snap-slider__list  hot-trends__list tab-content" >
+              <ion-slides pager="true" [options]="slideOptsThree" class="nodots">
+                <ion-slide class="nobullets">
+                
+                 <a class="hot-trend-item hot-trend-item_down" href="#">
+                  <div class="hot-trend-item__icon">
+                    <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                      <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-uvxy.img.svg" class="lazy-image pair-icon">
+                    </span>
+                  </div>
+                  <h4 class="hot-trend-item__title">ETF S&amp;P 500 Volatility 1.5x</h4>
+                  <div class="hot-trend-item__deviant">
+                    <ion-icon name="caret-down-outline"></ion-icon>
+                      -2.42%</div>
+                </a>
+                </ion-slide>
+                <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-uvxy.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">ETF S&amp;P 500 Volatility 1.5x</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                        -2.42%</div>
+                  </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-uvxy.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">ETF S&amp;P 500 Volatility 1.5x</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                        -2.42%</div>
+                  </a>
+                 </ion-slide >
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-bidu.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Baidu</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      -0.78%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide  class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-bidu.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Baidu</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      -0.78%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets" >
+                  <a class="hot-trend-item hot-trend-item_down" href="#">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-baba.img.svg" class="lazy-image pair-icon" >
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Alibaba</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                          -0.75%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets" >
+                  <a class="hot-trend-item hot-trend-item_up" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-ng.img.svg" class="lazy-image pair-icon">
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Natural Gas</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>>+0.72%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide  class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity lazy-load-image-loaded" >
+                        <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                      </div>
+                      <h4 class="hot-trend-item__title">NINTENDO</h4>
+                      <div class="hot-trend-item__deviant">
+                        <ion-icon name="caret-down-outline"></ion-icon>
+                        -0.72%</div>
+                      </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_up" href="/en/assets/ltcusd?chartType=priceChange&amp;timeFrame=1H">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity" >
+                        <span class="lazy-image pair-icon">
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon">
+                        </span>
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Litecoin</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      +0.66%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets" >
+                  <a class="hot-trend-item hot-trend-item_up" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity" >
+                        <span class="lazy-image pair-icon" >
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Bitcoin</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      +0.58%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_up" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity" >
+                        <span class="lazy-image pair-icon" >
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                    </span>
+                  </div>
+                  <h4 class="hot-trend-item__title">Nikkei 225</h4>
+                  <div class="hot-trend-item__deviant">
+                    <ion-icon name="caret-down-outline"></ion-icon>
+                    +0.57%</div>
+                  </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_down" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity">
+                        <span class="lazy-image pair-icon">
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Platinum</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      -0.56%</div>
+                    </a>
+                 </ion-slide>
+                 <ion-slide class="nobullets">
+                  <a class="hot-trend-item hot-trend-item_up" href="">
+                    <div class="hot-trend-item__icon">
+                      <span class=" lazy-load-image-background opacity" >
+                        <span class="lazy-image pair-icon">
+                          <img src="https://cdn-plus.olymptrade.com/fe/237_210930130113/bundle/images/pair-icon-nintendo.img.svg" class="lazy-image pair-icon"></span>
+                      </span>
+                    </div>
+                    <h4 class="hot-trend-item__title">Ethereum</h4>
+                    <div class="hot-trend-item__deviant">
+                      <ion-icon name="caret-down-outline"></ion-icon>
+                      +0.55%</div>
+                    </a>
+                 </ion-slide>              
+              </ion-slides>    
+           </div>
+          </div>
+        </div>
+      </div>
+     
+      </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-lg="12" size-md="12" size-xs="12">
+        <div class="assets-page__header-section">
+          <h1 class="assets">Assets</h1>
+          <div class="assets-page__toggle"  role="tablist" style="display: none;">
+            <a class="assets-toggle__button_active btn_transparent nav-link" data-toggle="tab" href="#icon1">
+              <img src="../../assets/images/aassets-icon1.png" alt="">
+            </a>
+            <a class="assets-page__toggle-list btn_transparent nav-link" data-toggle="tab" href="#icon2">
+              <img src="../../assets/images/assets-icon2.png" alt="">
+            </a>
+          </div>
+          <div class="nav nav-fill assets-page__toggle" id="nav-tab" role="tablist" style="display: flex;
+          flex-direction: row;margin-top: 22px;">
+            <a class="nav-item nav-link active assets-toggle__button_active btn_transparent" id="nav-home-tab" data-toggle="tab" href="#nav-icon1" role="tab" aria-controls="nav-icon1" >
+              <img src="../../assets/images/aassets-icon1.png" alt="">
+            </a>
+            <a class="nav-item nav-link assets-page__toggle-list btn_transparent" id="nav-profile-tab" data-toggle="tab" href="#nav-icon2" role="tab" aria-controls="nav-icon2" >
+              <img src="../../assets/images/assets-icon2.png" alt="">
+            </a>
+            
+          </div>
+        </div>
+        
+        <!-- <div class="form-group has-search">
+          <span class="fa fa-search form-control-feedback"></span>
+          <input type="text" class="form-control" placeholder="Search">
+        </div> -->
+        <div class="assets-form-main">
+          <div class="assets-form-main-inner">
+            <!-- <form>
+              <input class="assets-form" type="text" placeholder="Asset search"  value="">
+            </form> -->
+            <ion-searchbar></ion-searchbar>
+              <!-- <svg class="SvgIcon-module-host-3SE _3e-YjGN" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true" data-role="icon"><path fill="currentColor" fill-rule="evenodd" d="M10.6 4.6a6 6 0 100 12 6 6 0 000-12zm-8 6a8 8 0 1116 0 8 8 0 01-16 0z" clip-rule="evenodd"></path><path fill="currentColor" fill-rule="evenodd" d="M20.243 20.243a1 1 0 01-1.415 0l-4-4a1 1 0 011.415-1.415l4 4a1 1 0 010 1.415z" clip-rule="evenodd"></path></svg> -->
+              <!-- <button class="btn uQtlNHr btn_transparent btn_undefined" aria-label="search-close">
+                <svg class="SvgIcon-module-host-3SE" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true" data-role="icon"><path fill="currentColor" fill-rule="evenodd" d="M5.293 5.293a1 1 0 011.414 0L12 10.586l5.293-5.293a1 1 0 111.414 1.414L13.414 12l5.293 5.293a1 1 0 01-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 01-1.414-1.414L10.586 12 5.293 6.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </button> -->
+            </div>
+            <!-- <a class="btn _2h6u9e4 btn_transparent btn_undefined" href="#">Cancel</a> -->
+          </div>
+          <div style="margin-top: 20px;">
+                 <ion-segment style="justify-content: start;">
+                  <a href="#" class="assets-btn-colr">
+                  <ion-segment-button id="assets-segmnt">
+                    <div class="assets-btn-colrlable">Currencies</div>
+                  </ion-segment-button>
+                </a>
+                <a href="#" class="assets-btn-colr">
+                  <ion-segment-button id="assets-segmnt">
+                    <div class="assets-btn-colrlable">Stocks</div>
+                  </ion-segment-button>
+                </a>
+                <a href="#" class="assets-btn-colr">
+                  <ion-segment-button id="assets-segmnt">
+                    <div class="assets-btn-colrlable" >Metals</div>
+                  </ion-segment-button>
+                </a>
+                <a href="#" class="assets-btn-colr">
+                  <ion-segment-button id="assets-segmnt">
+                    <div class="assets-btn-colrlable">Indices</div>
+                  </ion-segment-button>
+                </a>
+                <a href="#" class="assets-btn-colr">
+                  <ion-segment-button id="assets-segmnt">
+                    <div class="assets-btn-colrlable">Commodities</div>
+                  </ion-segment-button>
+                </a>
+                <a href="#" class="assets-btn-colr" >
+                  <ion-segment-button id="assets-segmnt">
+                    <div class="assets-btn-colrlable">Crypto</div>
+                  </ion-segment-button>
+                </a>
+                <a href="#" class="assets-btn-colr">
+                  <ion-segment-button id="assets-segmnt">
+                    <div class="assets-btn-colrlable" >ETF</div>
+                  </ion-segment-button>
+                </a>
+                <a href="#" class="assets-btn-colr">
+                  <ion-segment-button id="assets-segmnt">
+                    <div class="assets-btn-colrlable" >OTC</div>
+                  </ion-segment-button>
+                </a>
+                <a href="#" class="assets-btn-colr">
+                  <ion-segment-button id="assets-segmnt">
+                    <div class="assets-btn-colrlable" >Composites</div>
+                  </ion-segment-button>
+                </a>
+                </ion-segment> 
+
+          </div>
+          <div class="tab-content" style="display: none;">
+            <div id="icon1" class="container tab-pane active"><br>
+              <div class="assets-container"> 
+                <div class="assets-list-view">
+                  <a class="asset-item btn_transparent" href="#">
+                    <div class="asset-item__side asset-item__side_inline-start">
+                      <div class="asset-item__icon">
+                        <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                          <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-bdix.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem">
+                        </span>
+                      </div>
+                      <h2 class="asset-item__title">Basic Dollar Index</h2>
+                    </div>
+                    <div class="asset-item__side asset-item__side_inline-end">
+                      <p class="asset-item__index">94.2437<span class="asset-item__index-currency">USD</span></p>
+                      <p class="asset-item__deviant asset-item__deviant_up">+0.21%</p>
+                    </div>
+                  </a>
+                  <a class="asset-item btn_transparent" href="#">
+                    <div class="asset-item__side asset-item__side_inline-start">
+                      <div class="asset-item__icon">
+                        <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                          <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-fce.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem"></span>
+                        </div>
+                        <h2 class="asset-item__title">CAC 40</h2>
+                      </div>
+                      <div class="asset-item__side asset-item__side_inline-end">
+                        <p class="asset-item__index">6,425.9<span class="asset-item__index-currency">EUR</span>
+                        </p>
+                        <p class="asset-item__deviant asset-item__deviant_down">-1.55%</p>
+                      </div>
+                    </a>
+                    <a class="asset-item btn_transparent" href="#">
+                      <div class="asset-item__side asset-item__side_inline-start">
+                        <div class="asset-item__icon">
+                          <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                            <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-bdix.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem">
+                          </span>
+                        </div>
+                        <h2 class="asset-item__title">Basic Dollar Index</h2>
+                      </div>
+                      <div class="asset-item__side asset-item__side_inline-end">
+                        <p class="asset-item__index">94.2437<span class="asset-item__index-currency">USD</span></p>
+                        <p class="asset-item__deviant asset-item__deviant_up">+0.21%</p>
+                      </div>
+                    </a>
+                    <a class="asset-item btn_transparent" href="#">
+                      <div class="asset-item__side asset-item__side_inline-start">
+                        <div class="asset-item__icon">
+                          <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                            <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-fce.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem"></span>
+                          </div>
+                          <h2 class="asset-item__title">CAC 40</h2>
+                        </div>
+                        <div class="asset-item__side asset-item__side_inline-end">
+                          <p class="asset-item__index">6,425.9<span class="asset-item__index-currency">EUR</span>
+                          </p>
+                          <p class="asset-item__deviant asset-item__deviant_down">-1.55%</p>
+                        </div>
+                      </a>
+                      <a class="asset-item btn_transparent" href="#">
+                        <div class="asset-item__side asset-item__side_inline-start">
+                          <div class="asset-item__icon">
+                            <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                              <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-bdix.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem">
+                            </span>
+                          </div>
+                          <h2 class="asset-item__title">Basic Dollar Index</h2>
+                        </div>
+                        <div class="asset-item__side asset-item__side_inline-end">
+                          <p class="asset-item__index">94.2437<span class="asset-item__index-currency">USD</span></p>
+                          <p class="asset-item__deviant asset-item__deviant_up">+0.21%</p>
+                        </div>
+                      </a>
+                      <a class="asset-item btn_transparent" href="#">
+                        <div class="asset-item__side asset-item__side_inline-start">
+                          <div class="asset-item__icon">
+                            <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                              <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-fce.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem"></span>
+                            </div>
+                            <h2 class="asset-item__title">CAC 40</h2>
+                          </div>
+                          <div class="asset-item__side asset-item__side_inline-end">
+                            <p class="asset-item__index">6,425.9<span class="asset-item__index-currency">EUR</span>
+                            </p>
+                            <p class="asset-item__deviant asset-item__deviant_down">-1.55%</p>
+                          </div>
+                        </a>
+                </div>
+              </div>
+            </div>
+            <div id="icon2" class="container tab-pane fade"><br>
+              <div class="assets-container"> 
+                <div class="assets-list-view">
+                  <a class="asset-item btn_transparent" href="#">
+                    <div class="asset-item__side asset-item__side_inline-start">
+                      <div class="asset-item__icon">
+                        <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                          <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-bdix.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem">
+                        </span>
+                      </div>
+                      <h2 class="asset-item__title">Basic Dollar Index</h2>
+                    </div>
+                    <div class="asset-item__side asset-item__side_inline-end">
+                      <p class="asset-item__index">94.2437<span class="asset-item__index-currency">USD</span></p>
+                      <p class="asset-item__deviant asset-item__deviant_up">+0.21%</p>
+                    </div>
+                  </a>
+                  <a class="asset-item btn_transparent" href="#">
+                    <div class="asset-item__side asset-item__side_inline-start">
+                      <div class="asset-item__icon">
+                        <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                          <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-fce.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem"></span>
+                        </div>
+                        <h2 class="asset-item__title">CAC 40</h2>
+                      </div>
+                      <div class="asset-item__side asset-item__side_inline-end">
+                        <p class="asset-item__index">6,425.9<span class="asset-item__index-currency">EUR</span>
+                        </p>
+                        <p class="asset-item__deviant asset-item__deviant_down">-1.55%</p>
+                      </div>
+                    </a>
+                    <a class="asset-item btn_transparent" href="#">
+                      <div class="asset-item__side asset-item__side_inline-start">
+                        <div class="asset-item__icon">
+                          <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                            <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-bdix.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem">
+                          </span>
+                        </div>
+                        <h2 class="asset-item__title">Basic Dollar Index</h2>
+                      </div>
+                      <div class="asset-item__side asset-item__side_inline-end">
+                        <p class="asset-item__index">94.2437<span class="asset-item__index-currency">USD</span></p>
+                        <p class="asset-item__deviant asset-item__deviant_up">+0.21%</p>
+                      </div>
+                    </a>
+                    <a class="asset-item btn_transparent" href="#">
+                      <div class="asset-item__side asset-item__side_inline-start">
+                        <div class="asset-item__icon">
+                          <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                            <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-fce.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem"></span>
+                          </div>
+                          <h2 class="asset-item__title">CAC 40</h2>
+                        </div>
+                        <div class="asset-item__side asset-item__side_inline-end">
+                          <p class="asset-item__index">6,425.9<span class="asset-item__index-currency">EUR</span>
+                          </p>
+                          <p class="asset-item__deviant asset-item__deviant_down">-1.55%</p>
+                        </div>
+                      </a>
+                      
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-icon1" role="tabpanel" aria-labelledby="nav-icon1-tab" style="color: #fff;">
+              <div class="assets-container"> 
+                <div class="assets-list-view">
+                  <a class="asset-item btn_transparent" href="#">
+                    <div class="asset-item__side asset-item__side_inline-start">
+                      <div class="asset-item__icon">
+                        <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                          <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-bdix.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem">
+                        </span>
+                      </div>
+                      <h2 class="asset-item__title">Basic Dollar Index</h2>
+                    </div>
+                    <div class="asset-item__side asset-item__side_inline-end">
+                      <p class="asset-item__index">94.2437<span class="asset-item__index-currency">USD</span></p>
+                      <p class="asset-item__deviant asset-item__deviant_up">+0.21%</p>
+                    </div>
+                  </a>
+                  <a class="asset-item btn_transparent" href="#">
+                    <div class="asset-item__side asset-item__side_inline-start">
+                      <div class="asset-item__icon">
+                        <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                          <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-fce.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem"></span>
+                        </div>
+                        <h2 class="asset-item__title">CAC 40</h2>
+                      </div>
+                      <div class="asset-item__side asset-item__side_inline-end">
+                        <p class="asset-item__index">6,425.9<span class="asset-item__index-currency">EUR</span>
+                        </p>
+                        <p class="asset-item__deviant asset-item__deviant_down">-1.55%</p>
+                      </div>
+                    </a>
+                    <a class="asset-item btn_transparent" href="#">
+                      <div class="asset-item__side asset-item__side_inline-start">
+                        <div class="asset-item__icon">
+                          <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                            <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-bdix.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem">
+                          </span>
+                        </div>
+                        <h2 class="asset-item__title">Basic Dollar Index</h2>
+                      </div>
+                      <div class="asset-item__side asset-item__side_inline-end">
+                        <p class="asset-item__index">94.2437<span class="asset-item__index-currency">USD</span></p>
+                        <p class="asset-item__deviant asset-item__deviant_up">+0.21%</p>
+                      </div>
+                    </a>
+                    <a class="asset-item btn_transparent" href="#">
+                      <div class="asset-item__side asset-item__side_inline-start">
+                        <div class="asset-item__icon">
+                          <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                            <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-fce.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem"></span>
+                          </div>
+                          <h2 class="asset-item__title">CAC 40</h2>
+                        </div>
+                        <div class="asset-item__side asset-item__side_inline-end">
+                          <p class="asset-item__index">6,425.9<span class="asset-item__index-currency">EUR</span>
+                          </p>
+                          <p class="asset-item__deviant asset-item__deviant_down">-1.55%</p>
+                        </div>
+                      </a>
+                      <a class="asset-item btn_transparent" href="#">
+                        <div class="asset-item__side asset-item__side_inline-start">
+                          <div class="asset-item__icon">
+                            <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                              <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-bdix.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem">
+                            </span>
+                          </div>
+                          <h2 class="asset-item__title">Basic Dollar Index</h2>
+                        </div>
+                        <div class="asset-item__side asset-item__side_inline-end">
+                          <p class="asset-item__index">94.2437<span class="asset-item__index-currency">USD</span></p>
+                          <p class="asset-item__deviant asset-item__deviant_up">+0.21%</p>
+                        </div>
+                      </a>
+                      <a class="asset-item btn_transparent" href="#">
+                        <div class="asset-item__side asset-item__side_inline-start">
+                          <div class="asset-item__icon">
+                            <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                              <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-fce.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem"></span>
+                            </div>
+                            <h2 class="asset-item__title">CAC 40</h2>
+                          </div>
+                          <div class="asset-item__side asset-item__side_inline-end">
+                            <p class="asset-item__index">6,425.9<span class="asset-item__index-currency">EUR</span>
+                            </p>
+                            <p class="asset-item__deviant asset-item__deviant_down">-1.55%</p>
+                          </div>
+                        </a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-icon2" role="tabpanel" aria-labelledby="nav-icon2-tab">
+              <div class="assets-container"> 
+                <div class="assets-list-view">
+                  <a class="asset-item btn_transparent" href="#">
+                    <div class="asset-item__side asset-item__side_inline-start">
+                      <div class="asset-item__icon">
+                        <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                          <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-bdix.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem">
+                        </span>
+                      </div>
+                      <h2 class="asset-item__title">Basic Dollar Index</h2>
+                    </div>
+                    <div class="asset-item__side asset-item__side_inline-end">
+                      <p class="asset-item__index">94.2437<span class="asset-item__index-currency">USD</span></p>
+                      <p class="asset-item__deviant asset-item__deviant_up">+0.21%</p>
+                    </div>
+                  </a>
+                  <a class="asset-item btn_transparent" href="#">
+                    <div class="asset-item__side asset-item__side_inline-start">
+                      <div class="asset-item__icon">
+                        <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                          <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-fce.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem"></span>
+                        </div>
+                        <h2 class="asset-item__title">CAC 40</h2>
+                      </div>
+                      <div class="asset-item__side asset-item__side_inline-end">
+                        <p class="asset-item__index">6,425.9<span class="asset-item__index-currency">EUR</span>
+                        </p>
+                        <p class="asset-item__deviant asset-item__deviant_down">-1.55%</p>
+                      </div>
+                    </a>
+                    <a class="asset-item btn_transparent" href="#">
+                      <div class="asset-item__side asset-item__side_inline-start">
+                        <div class="asset-item__icon">
+                          <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                            <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-bdix.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem">
+                          </span>
+                        </div>
+                        <h2 class="asset-item__title">Basic Dollar Index</h2>
+                      </div>
+                      <div class="asset-item__side asset-item__side_inline-end">
+                        <p class="asset-item__index">94.2437<span class="asset-item__index-currency">USD</span></p>
+                        <p class="asset-item__deviant asset-item__deviant_up">+0.21%</p>
+                      </div>
+                    </a>
+                    <a class="asset-item btn_transparent" href="#">
+                      <div class="asset-item__side asset-item__side_inline-start">
+                        <div class="asset-item__icon">
+                          <span class=" lazy-load-image-background opacity lazy-load-image-loaded" style="display: inline-block; height: 1.5rem; width: 1.5rem;">
+                            <img src="https://cdn-plus.olymptrade.com/fe/239_211005175057/bundle/images/pair-icon-fce.img.svg" class="lazy-image pair-icon" width="1.5rem" height="1.5rem"></span>
+                          </div>
+                          <h2 class="asset-item__title">CAC 40</h2>
+                        </div>
+                        <div class="asset-item__side asset-item__side_inline-end">
+                          <p class="asset-item__index">6,425.9<span class="asset-item__index-currency">EUR</span>
+                          </p>
+                          <p class="asset-item__deviant asset-item__deviant_down">-1.55%</p>
+                        </div>
+                      </a>
+                      
+                </div>
+              </div>
+            </div>
+          </div>
+         
+       
+      </ion-col>
+    </ion-row>
+  
+  </ion-grid>
+</div>
+</ion-content>

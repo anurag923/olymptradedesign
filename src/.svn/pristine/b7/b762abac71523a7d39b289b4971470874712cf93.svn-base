@@ -1,0 +1,282 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      
+        <div class="container-fluid pt-2">
+        <ion-grid  class=" p-0 md hydrated">
+          <ion-row  class="md hydrated ">
+            <ion-col   size-lg="4" size-md="4" class="home-tabs md hydrated">
+              <ion-title  class="heading  md title-default hydrated">
+                <div class="com-header__box ">
+                  <a class="com-header__logo home-page-title" target="_self" rel="noopener noreferrer">
+                    <svg fill="none" height="18" viewBox="0 0 146 18" width="146"><g clip-rule="evenodd" fill-rule="evenodd"><path d="M.083 9.492c0 9.49 14.268 9.49 14.268 0C14.35 0 .084 0 .084 9.492zm3.65 0c0-4.91 6.968-4.91 6.968 0-.075.86-.475 1.66-1.12 2.245s-1.488.907-2.364.907c-.875 0-1.719-.324-2.364-.907s-1.044-1.385-1.12-2.245zm17.42-6.873h-3.567v13.745h8.627v-3.192h-5.06zM32.934 7.2h-.166L30.28 2.62h-3.817v.49l4.646 7.446v5.81h3.484v-5.81l4.728-7.446v-.49h-3.899zM48.529 8.51l-5.475-5.972h-1.328v13.827h3.65v-6.137l2.986 3.029h.415l2.986-3.029v6.137h3.65V2.62H54.17l-5.64 5.89zm17.005-5.89h-6.139v13.745h3.567v-3.518h2.571c6.637 0 6.637-10.228 0-10.228zm0 7.036h-2.572V5.728h2.571c2.075.082 1.91 3.929 0 3.929zm12.774-3.928h3.403v10.637h3.483V5.727h3.401V2.62H78.308zM97.472 2.62h-6.138v13.745H94.9v-4.01h1.825l2.405 4.01h3.982v-.491l-2.737-4.418c3.567-2.29 2.571-8.836-2.904-8.836zm0 6.545H94.9V5.727h2.57c1.992.082 1.91 3.437 0 3.437zm13.439-6.71l-6.305 13.419v.491h3.483l.83-1.718h5.475l.83 1.718h3.483v-.491l-6.221-13.418h-1.576zm-.747 9.165l1.576-3.6 1.577 3.6zm16.176-9h-5.226v13.745h5.226c9.043 0 9.043-13.745 0-13.745zm0 10.554h-1.658V5.809h1.658c4.397 0 4.397 7.364 0 7.364zm13.522.082V10.8h4.728V7.692h-4.728V5.727h5.143V2.62h-8.71v13.745h8.876v-3.11z" fill="#fff"></path><path d="M7.051 10.8l-5.392 6.545h10.784z" fill="#2aa76d"></path><path d="M43.386 0l4.977 4.909L53.34 0z" fill="#df553a"></path></g></svg>
+                  </a>
+                  <a href="" class="dispaly-icon">
+                    <ion-icon name="disc-outline"></ion-icon>
+                   </a>
+
+                    <ion-menu side="start" color="primary" content-id="main-content" class="dispaly-icon-menu">
+                      <ion-header>
+                        <ion-toolbar translucent class="mob">
+                          <ion-title>Menu</ion-title>
+                        </ion-toolbar>
+                      </ion-header>
+                      <ion-content>
+                        <ion-list>
+                          <ion-item>
+                            <ion-icon name="mail" slot="start"></ion-icon>
+                            <ion-label>Inbox</ion-label>
+                          </ion-item>
+                          <ion-item>
+                            <ion-icon name="paper-plane" slot="start"></ion-icon>
+                            <ion-label>Outbox</ion-label>
+                          </ion-item>
+                          <ion-item>
+                            <ion-icon name="heart" slot="start"></ion-icon>
+                            <ion-label>Favorites</ion-label>
+                          </ion-item>
+                          <ion-item>
+                            <ion-icon name="archive" slot="start"></ion-icon>
+                            <ion-label>Archived</ion-label>
+                          </ion-item>
+                          <ion-item>
+                            <ion-icon name="trash" slot="start"></ion-icon>
+                            <ion-label>Trash</ion-label>
+                          </ion-item>
+                          <ion-item>
+                            <ion-icon name="warning" slot="start"></ion-icon>
+                            <ion-label>Spam</ion-label>
+                          </ion-item>
+                        </ion-list>
+                      </ion-content>
+                    </ion-menu>
+                
+                    <div class="ion-page dispaly-icon" id="main-content" >
+                      <ion-header>
+                        <ion-toolbar>
+                          <ion-buttons slot="start">
+                            <ion-menu-button></ion-menu-button>
+                          </ion-buttons>
+                          <ion-title>Inbox</ion-title>
+                        </ion-toolbar>
+                      </ion-header>
+                      <ion-content class="ion-padding">
+                        <ion-button  onclick="openMenu()">Open Menu</ion-button>
+                      </ion-content>
+                    </div>
+             </div>
+
+              </ion-title>
+            </ion-col>
+            <ion-col  size-lg="4" size-md="4"  class="home-tabs md hydrated" >
+              
+        <nav class="com-header-links home-page-title">
+                  <ul class="com-header-links__list">
+                    <li class="com-header-links__item">
+                      <a class="com-header-c-nav-link" href="#">
+                        <span >About Us</span>
+                      </a>
+                    </li>
+                    <li class="com-header-links__item">
+                      <a class="com-header-c-nav-link" href="#">
+                        <span >Help Center</span>
+                      </a>
+                    </li>
+                    <li class="com-header-links__item">
+                      <a class="com-header-c-nav-link" href="">
+                        <span >Assets</span>
+                      </a>
+                    </li>
+                    <li class="com-header-links__item">
+                      <a class="com-header-c-nav-link" href="#">
+                        <span data-trans="op_insights_title">Insights</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+          
+            </ion-col>
+            <ion-col  size-md="4" size-lg="4" class="home-tabs md hydrated btn-right" >
+              <div>
+                <ion-button href="#"  color="light" class="omp_login" slot="end">Login</ion-button>
+               <ion-button href="#"  color="primary" class="omp_login" slot="end">Registation</ion-button>
+              </div>
+            </ion-col>
+          </ion-row>     
+        </ion-grid>
+        </div>
+  
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="layout">
+  <ion-grid>
+  <div class="about-p-intro">
+    <div class="container">
+      
+        <ion-row>
+          <ion-col size-lg="12" size-md="12" size-xs="12">
+            <!-- <div> -->
+            <ul class="about-olymp">
+              <li class="about-olymp__item">
+                <a class="about-olymp__link about-olymp__link_active" href="about">About Us</a>
+              </li>
+              <li class="about-olymp__item">
+                <a class="about-olymp__link" href="regulation">Regulation</a>
+              </li>
+              <li class="about-olymp__item">
+                <a class="about-olymp__link" href="terms">Legal Information</a>
+              </li>
+            </ul>
+          <!-- </div> -->
+          </ion-col>
+      
+          <ion-col size-lg="5" size-md="6" size-xs="6">
+            <div class="about__content">
+              <h1 class="about__title">
+                <span>Seven Years <br> of Impeccable Service</span>
+              </h1>
+              </div>
+          </ion-col>
+          <ion-col size-lg="7" size-md="6" size-xs="6">
+          <div class="about__content about__image">
+              <img src="../../assets/images/about_7.png" alt="" width="90%">
+            </div>
+          </ion-col>
+      
+          <ion-col size-lg="12" size-md="12" size-xs="12">
+            <p class="page-m-intro__description text"><span data-trans="about_page_intro_description">The Olymp Trade company has been one of the leading online brokers since 2014. Our developers, financial experts, personal, and support managers are making every effort to make your trading more comfortable and profitable year after year.</span></p>
+          </ion-col>
+        </ion-row>
+      </div>
+  </div>
+
+        <div class="container">
+        <ion-row>
+          <div class="page-m-statistics page__section">
+            <!-- <div class="container"> -->
+              <ion-col>
+                <h2 class="about-oly-num"><span>Olymp Trade by the Numbers</span></h2>
+                <ul class="about_statistics__list">
+                  <li class="about_statistics__card">
+                    <div class="about_statistics__card-title">
+                      <span>60 mln</span>
+                    </div>
+                    <div class="about_statistics__card-description">
+                      <span>User accounts</span>
+                    </div>
+                  </li>
+                  <li class="about_statistics__card">
+                    <div class="about_statistics__card-title">
+                      <span>$16 mln</span>
+                    </div>
+                    <div class="about_statistics__card-description">
+                      <span>Average monthly payouts</span>
+                    </div>
+                  </li>
+                  <li class="about_statistics__card">
+                    <div class="about_statistics__card-title">
+                      <span>30 mln</span>
+                    </div>
+                    <div class="about_statistics__card-description">
+                      <span >monthly transactions on the platform</span>
+                    </div>
+                  </li>
+                  <li class="about_statistics__card">
+                    <div class="about_statistics__card-title">
+                      <span >$211 mln</span>
+                    </div>
+                    <div class="about_statistics__card-description">
+                      <span >Monthly trade turnover</span>
+                    </div>
+                  </li>
+                </ul>
+              </ion-col>
+            <!-- </div> -->
+          </div>
+        </ion-row>
+        </div>
+        <div class="container-fluid">
+          <div class="about-countries page__section">
+            <ion-row>
+                <div class="container">
+                  <ion-col  size-lg="12" size-md="12" size-xs="12">
+                    <div class="about-countries__description">
+                      <span class="about-countries__title">
+                        <span data-trans="about_page_countries">Countries</span>
+                      </span>
+                      <p class="about-countries__description-text">
+                        <span data-trans="about_page_countries_description">Traders from all over the world trust Olymp Trade. The platform interface is localized into 13 languages. </span>
+                      </p>
+                    </div>
+                    <div>
+                      <ul class="about-countries-list">
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/en.bdbb3c42.svg&quot;);">
+                          <span class="about-countries-list__label">English</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/id.e6269b18.svg&quot;);">
+                          <span class="about-countries-list__label">Bahasa Indonesia</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/hi.8598ad80.svg&quot;);">
+                          <span class="about-countries-list__label">Hindi</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/vi.f8534f08.svg&quot;);">
+                          <span class="about-countries-list__label">Tiếng Việt</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/ru.04117549.svg&quot;);">
+                          <span class="about-countries-list__label">Русский</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/th.d536a908.svg&quot;);">
+                          <span class="about-countries-list__label">ไทย</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/pt.6c4be365.svg&quot;);">
+                          <span class="about-countries-list__label">Português</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/ms.7c15cdde.svg&quot;);">
+                          <span class="about-countries-list__label">Bahasaa Melayu</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/tr.a430b7a9.svg&quot;);">
+                          <span class="about-countries-list__label">Türkçe</span>
+                        </li>
+                        <li class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/ar.16beae8e.svg&quot;);">
+                          <span class="about-countries-list__label">العربية</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/es.1a10aae7.svg&quot;);">
+                          <span class="about-countries-list__label">Español</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/fr.99c6faf6.svg&quot;);">
+                          <span class="about-countries-list__label">Français</span>
+                        </li>
+                        <li class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/ko.c1b8d674.svg&quot;);">
+                          <span class="about-countries-list__label">한국어 </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </ion-col>
+    
+                </div>
+              
+            </ion-row>
+          </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ion-grid>
+</div>
+</ion-content>

@@ -1,0 +1,167 @@
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { BetService } from '../bet.service';
+
+@Component({
+  selector: 'app-platform',
+  templateUrl: './platform.page.html',
+  styleUrls: ['./platform.page.scss'],
+})
+export class PlatformPage implements OnInit {
+
+  constructor(private bet:BetService, private route:Router) { 
+    
+  }
+  wallet:any;
+  amount:any;
+  initial:any;
+  final:any;
+  timers:any;
+  payout = 0;
+  input_amount = "";
+  stocks:any;
+  livedata:any;
+  duration = "";
+  timer:any;
+  ngOnInit() {
+    // this.bet.live_btc().subscribe((res)=>{
+    //   console.log(res);
+    //   this.livedata = res.close;
+
+    //   setInterval(()=>{
+    //     this.bet.live_btc().subscribe((res)=>{
+    //       console.log(res);
+    //       this.livedata = res.close;
+    //     })
+    //   },60000)
+    // })
+
+    this.bet.live_rate().subscribe((res)=>{
+      // console.log(res);
+      this.livedata = res.response;
+      this.initial = this.livedata;
+      console.log(this.livedata);
+
+      setInterval(()=>{
+        this.bet.live_rate().subscribe((res)=>{
+          // console.log(res);
+          this.livedata = res.response;
+          this.final = this.livedata;
+          console.log(this.livedata);
+        })
+      },60000)
+    })
+    this.bet.stock_view().subscribe((res)=>{
+      console.log(res);
+      this.stocks = res.results;
+    })
+    console.log(this.input_amount);
+    this.bet.view_timers().subscribe((res)=>{
+      console.log(res);
+      this.timers = res.response;
+      // this.payout = res.response[0].payout;
+      // console.log(this.payout);
+    })
+    this.bet.view_wallet().subscribe((res)=>{
+      console.log(res);
+      this.wallet = res;
+      this.amount = this.wallet.response[0].amount;
+      console.log(this.amount);
+    })
+    
+    // setInterval(()=>{
+    //   this.getlivedata;
+    // },2000)
+  }
+  placebet_up(){
+    console.log(this.initial);
+    // this.bet.live_rate().subscribe((res)=>{
+    //   console.log(res);
+    //   this.initial = res.response;
+    //   setInterval(()=>{
+    //     this.bet.live_rate().subscribe((res)=>{
+    //       console.log(res);
+    //       this.final = res.response;
+    //     })
+    //   },60000)
+    // })
+    // var final  = 2000;
+    // this.bet.view_betcategories().subscribe((res)=>{
+    //   console.log(res);
+    //   this.initial = res[0].amount;
+    // })
+    const data = {
+      market : 'BTCUSD',
+      betamount : +this.input_amount,
+      duration : this.duration
+    }
+    console.log(data.duration);
+    // if((this.initial + data.betamount)>final){
+      
+    // }
+    this.bet.place_bet(data).subscribe((res)=>{
+      console.log(res.start_date);
+      setTimeout(() => {
+        var payout = this.payout.toString();
+        var payout_arr = payout.split(".");
+        console.log(payout_arr);
+        const val = {
+          market : 'BTCUSD',
+          betamount : data.betamount,
+          duration : data.duration,
+          start_date : res.start_date,
+          start_time : res.start_time,
+          profitloss : this.final>this.initial?((+payout_arr[1]*data.betamount)/100):this.final<this.initial?-data.betamount:0
+        }
+        this.bet.final_bet(val).subscribe((res)=>{
+          console.log(this.final);
+          console.log(res);
+        })
+      },+this.timer*60*1000);
+    })
+
+    
+  }
+
+  placebet_down(){
+    var final  = 2000;
+    this.bet.view_betcategories().subscribe((res)=>{
+      console.log(res);
+      this.initial = res[0].amount;
+    })
+    const data = {
+      betcategory_id : 3,
+      betamount : -100,
+      duration : "3"
+    }
+    this.bet.place_bet(data).subscribe((res)=>{
+      console.log(res.start_date);
+      setTimeout(() => {
+        const val = {
+          betcategory_id : 3,
+          betamount : data.betamount,
+          duration : data.duration,
+          start_date : res.start_date,
+          start_time : res.start_time,
+          profitloss : this.initial + data.betamount - final
+        }
+        this.bet.final_bet(val).subscribe((res)=>{
+          console.log(res);
+        })
+      },+data.duration*60*1000);
+    })
+  }
+  pay_out(event:any){
+    console.log(event.target.value);
+    this.duration = event.target.value;
+    this.bet.single_payout(event.target.value).subscribe((res)=>{
+      console.log(res);
+      this.payout = res.response[0].payout;
+      this.timer = res.response[0].timer;
+    })
+  }
+
+  bet_history(){
+    this.route.navigate(['/bethistiry']);
+  }
+}
