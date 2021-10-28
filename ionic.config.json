@@ -1,7 +1,10 @@
 {
   "name": "olymptrade_21.09.21",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
   },
   "type": "angular"
 }
