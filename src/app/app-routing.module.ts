@@ -75,6 +75,10 @@ const routes: Routes = [
     path: 'iframe',
     loadChildren: () => import('./iframe/iframe.module').then( m => m.IframePageModule)
   },
+  {
+    path: 'masterlogin',
+    loadChildren: () => import('./masterlogin/masterlogin.module').then( m => m.MasterloginPageModule)
+  },
  
   // {
   //   path: 'helpcenter',
