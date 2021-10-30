@@ -54,7 +54,7 @@ export class IframePage implements OnInit {
     // .set('Access-Control-Allow-Origin', '*')
     // .set('Authorization',`Bearer ${myParam}`);
     // console.log(headers);
-    // this.http.get('http://127.0.0.1/api/master/viewfinalwallet',{'headers':headers}).subscribe((res) => {
+    // this.http.get('http://127.0.0.1:8000/api/master/viewfinalwallet',{'headers':headers}).subscribe((res) => {
     //   console.log(res);
     //   this.wallet = res;
     //   this.amount = this.wallet.response[0].amount;
@@ -90,8 +90,9 @@ export class IframePage implements OnInit {
     
   }
   placebet_up() {
-    console.log(this.socketData[this.socketData.length-1]);
-    this.initial = this.socketData[this.socketData.length-1][0].p;
+    //console.log(this.socketData[this.socketData.length-1]);
+    //this.initial = this.socketData[this.socketData.length-1][0].p;
+    this.initial = 1000;
     console.log(this.initial);
     const data = {
       market: 'BTCUSD',
@@ -99,18 +100,26 @@ export class IframePage implements OnInit {
       duration: this.duration
     }
     console.log(data.duration);
-    this.bet.place_bet(data).subscribe((res) => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const myParam = urlParams.get('token');
+    const headers= new HttpHeaders()
+    .set('content-type', 'application/json')
+    .set('Access-Control-Allow-Origin', '*')
+    .set('Authorization',`Bearer ${myParam}`);
+    console.log(headers);
+    this.http.post('http://127.0.0.1:8000/api/master/placebet',data,{'headers':headers}).subscribe((res:any) => {
       console.log(res);
       this.exposure = res.response.exposure;
-      this.bet.view_wallet().subscribe((res) => {
+      this.http.get('http://127.0.0.1:8000/api/master/viewfinalwallet',{'headers':headers}).subscribe((res:any) => {
         this.amount = res.response[0].amount;
       })
       setTimeout(() => {
         var payout = this.payout.toString();
         var payout_arr = payout.split(".");
         console.log(payout_arr);
-        console.log(this.socketData[this.socketData.length-1]);
-        this.final = this.socketData[this.socketData.length-1][0].p;
+        //console.log(this.socketData[this.socketData.length-1]);
+        //this.final = this.socketData[this.socketData.length-1][0].p;
+        this.final = 1500;
         console.log(this.final);
         const val = {
           market: 'BTCUSD',
@@ -122,12 +131,12 @@ export class IframePage implements OnInit {
           profitloss: this.final > this.initial ? ((+payout_arr[1] * data.betamount) / 100) : this.final < this.initial ? -data.betamount : 0
         }
         console.log(val);
-        this.bet.final_bet(val).subscribe((res) => {
+        this.http.post('http://127.0.0.1:8000/api/master/finalbet',val,{'headers':headers}).subscribe((res:any) => {
           
           console.log(res);
           this.exposure = 0;
           console.log(this.exposure);
-          this.bet.view_wallet().subscribe((res) => {
+          this.http.get('http://127.0.0.1:8000/api/master/viewfinalwallet',{'headers':headers}).subscribe((res:any) => {
             this.amount = res.response[0].amount;
           })
         })
@@ -439,7 +448,7 @@ export class IframePage implements OnInit {
     .set('Access-Control-Allow-Origin', '*')
     .set('Authorization',`Bearer ${myParam}`);
     console.log(headers);
-    this.http.get('http://127.0.0.1/api/master/getmarketbytype?type='+type,{'headers':headers}).subscribe((res:any) => {
+    this.http.get('http://127.0.0.1:8000/api/master/getmarketbytype?type='+type,{'headers':headers}).subscribe((res:any) => {
       this.markets = res.response;
       console.log(this.markets);
     })
@@ -465,10 +474,10 @@ export class IframePage implements OnInit {
       })
       const subject = webSocket("wss://ws.finnhub.io?token=c5g1l4qad3i9cg8uch10");
       //subject.next({ action: "auth", params: "6sEFcNe2upitHW5lt9dp7EfkIuxoR58k" });
-      subject.next({'type':'subscribe', 'symbol': 'BINANCE:BTCUSDT'});
+      subject.next({'type':'subscribe', 'symbol': 'COINBASE:BTC-USD'});
       var val;
       subject.subscribe((data)=>{
-        
+        //console.log(data);
         if(data!=undefined){
           var data = data['data'];
           val = data;
@@ -592,7 +601,7 @@ export class IframePage implements OnInit {
           stockChart.options.navigator.slider.maximum = new Date(xVal + (90 * 1000));
         }
         stockChart.options.charts[0].axisY2.stripLines[0].value = dataPoints[dataPoints.length - 1].y;
-        console.log(stockChart.options.charts[0].axisY2.stripLines[0]["value"].toString().substring(stockChart.options.charts[0].axisY2.stripLines[0]["value"].toString().indexOf('.')+1).split(''));
+        //console.log(stockChart.options.charts[0].axisY2.stripLines[0]["value"].toString().substring(stockChart.options.charts[0].axisY2.stripLines[0]["value"].toString().indexOf('.')+1).split(''));
         
         if(stockChart.options.charts[0].axisY2.stripLines[0]["value"]%1!=0){
           var striplength = stockChart.options.charts[0].axisY2.stripLines[0]["value"].toString().split('.')[1].length

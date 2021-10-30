@@ -12,18 +12,18 @@ const headers= new HttpHeaders()
 
 export class BetService {
   
-  private betcategories = "http://127.0.0.1/api/user/viewbetcategories";
-  private wallet = "http://127.0.0.1/api/user/viewfinalwallet";
-  private placebet = "http://127.0.0.1/api/user/placebet";
-  private finalbet = "http://127.0.0.1/api/user/finalbet";
-  private viewbetcategories = "http://127.0.0.1/api/user/viewbetcategories";
-  private viewtimers = "http://127.0.0.1/api/user/viewtimers";
-  private singlepayout = "http://127.0.0.1/api/user/singlepayout";
+  private betcategories = "http://127.0.0.1:8000/api/user/viewbetcategories";
+  private wallet = "http://127.0.0.1:8000/api/user/viewfinalwallet";
+  private placebet = "http://127.0.0.1:8000/api/user/placebet";
+  private finalbet = "http://127.0.0.1:8000/api/user/finalbet";
+  private viewbetcategories = "http://127.0.0.1:8000/api/user/viewbetcategories";
+  private viewtimers = "http://127.0.0.1:8000/api/user/viewtimers";
+  private singlepayout = "http://127.0.0.1:8000/api/user/singlepayout";
   private stock = "https://api.polygon.io/v3/reference/exchanges?apiKey=6sEFcNe2upitHW5lt9dp7EfkIuxoR58k";
   private livebtc = "https://api.polygon.io/v1/open-close/crypto/BTC/USD/2021-09-23?adjusted=true&apiKey=6sEFcNe2upitHW5lt9dp7EfkIuxoR58k";
-  private liverate = "http://127.0.0.1/api/liverate";
-  private completedbets = "http://127.0.0.1/api/user/viewfinalbets";
-  private getmarketbytype = "http://127.0.0.1/api/user/getmarketbytype";
+  private liverate = "http://127.0.0.1:8000/api/liverate";
+  private completedbets = "http://127.0.0.1:8000/api/user/viewfinalbets";
+  private getmarketbytype = "http://127.0.0.1:8000/api/user/getmarketbytype";
   constructor(private http:HttpClient) { }
 
   view_betcategories():Observable<any>{
