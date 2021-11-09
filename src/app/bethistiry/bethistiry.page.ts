@@ -11,7 +11,8 @@ export class BethistiryPage implements OnInit {
   constructor(private bet:BetService) { }
   completedbets:any;
   ngOnInit() {
-    this.bet.completed_bets().subscribe((res)=>{
+
+    this.bet.completed_bets(localStorage.getItem('uid')).subscribe((res)=>{
       console.log(res);
       this.completedbets = res.response;
     })

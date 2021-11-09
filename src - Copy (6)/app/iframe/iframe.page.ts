@@ -54,7 +54,7 @@ export class IframePage implements OnInit {
     // .set('Access-Control-Allow-Origin', '*')
     // .set('Authorization',`Bearer ${myParam}`);
     // console.log(headers);
-    // this.http.get('http://127.0.0.1:8000/api/master/viewfinalwallet',{'headers':headers}).subscribe((res) => {
+    // this.http.get('http://109.74.206.37/user/api/master/viewfinalwallet',{'headers':headers}).subscribe((res) => {
     //   console.log(res);
     //   this.wallet = res;
     //   this.amount = this.wallet.response[0].amount;
@@ -289,7 +289,7 @@ export class IframePage implements OnInit {
       if (this.dataPoints.length > 1000) {
         console.log("if part");
         const subject = webSocket("wss://socket.polygon.io/crypto");
-        subject.next({ action: "auth", params: "6sEFcNe2upitHW5lt9dp7EfkIuxoR58k" });
+        subject.next({ action: "auth", params: "ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6" });
         subject.next({ action: "subscribe", params: "XT.BTC-USD" });
         subject.subscribe((res) => {
           this.socketData = res;
@@ -332,7 +332,7 @@ export class IframePage implements OnInit {
   }
   gethistory() {
     return new Promise<void>((resolve, reject) => {
-      this.http.get('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=6sEFcNe2upitHW5lt9dp7EfkIuxoR58k')
+      this.http.get('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6')
         .subscribe((data) => {
           this.history.push(data);
           var interval = 340;
@@ -439,7 +439,7 @@ export class IframePage implements OnInit {
     .set('Access-Control-Allow-Origin', '*')
     .set('Authorization',`Bearer ${myParam}`);
     console.log(headers);
-    this.http.get('http://127.0.0.1:8000/api/master/getmarketbytype?type='+type,{'headers':headers}).subscribe((res:any) => {
+    this.http.get('http://109.74.206.37/user/api/master/getmarketbytype?type='+type,{'headers':headers}).subscribe((res:any) => {
       this.markets = res.response;
       console.log(this.markets);
     })
@@ -456,7 +456,7 @@ export class IframePage implements OnInit {
       var history = [];
       var arr1 = [];
       var dataCount;
-      this.http.get(`https://api.polygon.io/v2/aggs/ticker/${abbv}/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=6sEFcNe2upitHW5lt9dp7EfkIuxoR58k`)
+      this.http.get(`https://api.polygon.io/v2/aggs/ticker/${abbv}/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6`)
       .subscribe((data)=>{
         history.push(data);
         for(var i=0;i<history[0].results.length;i++){
@@ -464,7 +464,7 @@ export class IframePage implements OnInit {
         }
       })
       const subject = webSocket("wss://ws.finnhub.io?token=c5g1l4qad3i9cg8uch10");
-      //subject.next({ action: "auth", params: "6sEFcNe2upitHW5lt9dp7EfkIuxoR58k" });
+      //subject.next({ action: "auth", params: "ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6" });
       subject.next({'type':'subscribe', 'symbol': 'BINANCE:BTCUSDT'});
       var val;
       subject.subscribe((data)=>{
@@ -677,7 +677,7 @@ export class IframePage implements OnInit {
       var history = [];
       var arr1 = [];
       var dataCount;
-      fetch('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=6sEFcNe2upitHW5lt9dp7EfkIuxoR58k')
+      fetch('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6')
         .then(response => response.json())
         .then((data) => {
           history.push(data);
@@ -691,7 +691,7 @@ export class IframePage implements OnInit {
       var val;
       
       socket.addEventListener('open', function (event) {
-        socket.send(JSON.stringify({ action: "auth", params: "6sEFcNe2upitHW5lt9dp7EfkIuxoR58k" }));
+        socket.send(JSON.stringify({ action: "auth", params: "ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6" }));
         socket.send(JSON.stringify({ action: "subscribe", params: "XT.BTC-USD" }));
         
       });

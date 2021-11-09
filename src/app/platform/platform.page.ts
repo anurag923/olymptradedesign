@@ -178,11 +178,11 @@ export class PlatformPage implements OnInit {
   pay_out(event: any) {
     console.log(event.target.value);
     this.duration = event.target.value;
-    this.bet.single_payout(event.target.value).subscribe((res) => {
-      console.log(res);
-      this.payout = res.response[0].payout;
-      this.timer = res.response[0].timer;
-    })
+    // this.bet.single_payout(event.target.value).subscribe((res) => {
+    //   console.log(res);
+    //   this.payout = res.response[0].payout;
+    //   this.timer = res.response[0].timer;
+    // })
   }
 
   bet_history() {
@@ -207,7 +207,7 @@ export class PlatformPage implements OnInit {
   stocksgraph(abbv: any) {
     // console.log("stocksgraph");
     // const subject = webSocket("wss://socket.polygon.io/stocks");
-    // subject.next({action:"auth",params:"6sEFcNe2upitHW5lt9dp7EfkIuxoR58k"});
+    // subject.next({action:"auth",params:"ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6"});
     // subject.subscribe(
     //   (msg) => {console.log('message received: ' + msg);
     //   this.livedata = msg;
@@ -268,7 +268,7 @@ export class PlatformPage implements OnInit {
   cryptograph(abbv: any) {
     this.currentDate = new Date();
     console.log("stocksgraph");
-    // this.http.get('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/2/minute/2021-10-22/2021-10-22?adjusted=true&sort=asc&apiKey=6sEFcNe2upitHW5lt9dp7EfkIuxoR58k')
+    // this.http.get('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/2/minute/2021-10-22/2021-10-22?adjusted=true&sort=asc&apiKey=ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6')
     // .subscribe((data)=>{
     //   this.history.push(data);
     //   console.log('history',this.history[0]['results']);
@@ -365,7 +365,7 @@ export class PlatformPage implements OnInit {
       if (this.dataPoints.length > 1000) {
         console.log("if part");
         const subject = webSocket("wss://socket.polygon.io/crypto");
-        subject.next({ action: "auth", params: "6sEFcNe2upitHW5lt9dp7EfkIuxoR58k" });
+        subject.next({ action: "auth", params: "ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6" });
         subject.next({ action: "subscribe", params: "XT.BTC-USD" });
         subject.subscribe((res) => {
           this.socketData = res;
@@ -454,7 +454,7 @@ export class PlatformPage implements OnInit {
   }
   gethistory() {
     return new Promise<void>((resolve, reject) => {
-      this.http.get('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=6sEFcNe2upitHW5lt9dp7EfkIuxoR58k')
+      this.http.get('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6')
         .subscribe((data) => {
           this.history.push(data);
           var interval = 340;
@@ -585,7 +585,7 @@ export class PlatformPage implements OnInit {
       var history = [];
       var arr1 = [];
       var dataCount;
-      this.http.get(`https://api.polygon.io/v2/aggs/ticker/${abbv}/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=6sEFcNe2upitHW5lt9dp7EfkIuxoR58k`)
+      this.http.get(`https://api.polygon.io/v2/aggs/ticker/${abbv}/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6`)
       .subscribe((data)=>{
         history.push(data);
         for(var i=0;i<history[0].results.length;i++){
@@ -593,7 +593,7 @@ export class PlatformPage implements OnInit {
         }
       })
       const subject = webSocket("wss://socket.polygon.io/crypto");
-      subject.next({ action: "auth", params: "6sEFcNe2upitHW5lt9dp7EfkIuxoR58k" });
+      subject.next({ action: "auth", params: "ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6" });
       subject.next({ action: "subscribe", params: "XT.BTC-USD" });
       var val;
       subject.subscribe((data)=>{
@@ -813,7 +813,7 @@ export class PlatformPage implements OnInit {
       var history = [];
       var arr1 = [];
       var dataCount;
-      fetch('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=6sEFcNe2upitHW5lt9dp7EfkIuxoR58k')
+      fetch('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6')
         .then(response => response.json())
         .then((data) => {
           history.push(data);
@@ -828,7 +828,7 @@ export class PlatformPage implements OnInit {
       var val;
       // Connection opened -> Subscribe
       socket.addEventListener('open', function (event) {
-        socket.send(JSON.stringify({ action: "auth", params: "6sEFcNe2upitHW5lt9dp7EfkIuxoR58k" }));
+        socket.send(JSON.stringify({ action: "auth", params: "ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6" }));
         socket.send(JSON.stringify({ action: "subscribe", params: "XT.BTC-USD" }));
         //socket.send(JSON.stringify({'type':'subscribe', 'symbol': 'COINBASE:BTC-USD'}))
       });

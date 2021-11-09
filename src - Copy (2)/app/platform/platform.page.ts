@@ -200,7 +200,7 @@ export class PlatformPage implements OnInit {
   stocksgraph(abbv: any) {
     // console.log("stocksgraph");
     // const subject = webSocket("wss://socket.polygon.io/stocks");
-    // subject.next({action:"auth",params:"6sEFcNe2upitHW5lt9dp7EfkIuxoR58k"});
+    // subject.next({action:"auth",params:"ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6"});
     // subject.subscribe(
     //   (msg) => {console.log('message received: ' + msg);
     //   this.livedata = msg;
@@ -261,7 +261,7 @@ export class PlatformPage implements OnInit {
   cryptograph(abbv: any) {
     this.currentDate = new Date();
     console.log("stocksgraph");
-    // this.http.get('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/2/minute/2021-10-22/2021-10-22?adjusted=true&sort=asc&apiKey=6sEFcNe2upitHW5lt9dp7EfkIuxoR58k')
+    // this.http.get('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/2/minute/2021-10-22/2021-10-22?adjusted=true&sort=asc&apiKey=ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6')
     // .subscribe((data)=>{
     //   this.history.push(data);
     //   console.log('history',this.history[0]['results']);
@@ -276,7 +276,7 @@ export class PlatformPage implements OnInit {
       console.log("this.dataPoints.length",this.dataPoints.length);
     if (this.dataPoints.length > 1000) {
       const subject = webSocket("wss://socket.polygon.io/crypto");
-      subject.next({ action: "auth", params: "6sEFcNe2upitHW5lt9dp7EfkIuxoR58k" });
+      subject.next({ action: "auth", params: "ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6" });
       subject.next({ action: "subscribe", params: "XT.BTC-USD" });
       subject.subscribe((res) => {
         this.socketData = res;
@@ -430,7 +430,7 @@ export class PlatformPage implements OnInit {
   }
   gethistory() {
     return new Promise<void>((resolve, reject) => {
-      this.http.get('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/minute/2021-10-25/2021-10-25?adjusted=true&sort=asc&apiKey=6sEFcNe2upitHW5lt9dp7EfkIuxoR58k')
+      this.http.get('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/minute/2021-10-25/2021-10-25?adjusted=true&sort=asc&apiKey=ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6')
         .subscribe((data) => {
           this.history.push(data);
           var interval = 340;

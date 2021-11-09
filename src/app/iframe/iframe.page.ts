@@ -44,17 +44,28 @@ export class IframePage implements OnInit {
   is_updatechart = false;
   current_val:any;
   market_names = [];
+  userbalance:number;
+  uid:string;
+  token:string;
   ngOnInit() {
     console.log(window.location.href);
     const urlParams = new URLSearchParams(window.location.search);
-    const myParam = urlParams.get('token');
-    console.log(myParam);
+    const myParam_token = urlParams.get('token');
+    const myParam_uid = urlParams.get('uid');
+    const myParam_balance = urlParams.get('balance');
+    this.userbalance = +myParam_balance;
+    this.uid = myParam_uid;
+    this.token = myParam_token;
+    console.log(myParam_token);
+    console.log(myParam_uid);
+    console.log(myParam_balance);
+    localStorage.setItem('uid',myParam_uid);
     // const headers= new HttpHeaders()
     // .set('content-type', 'application/json')
     // .set('Access-Control-Allow-Origin', '*')
     // .set('Authorization',`Bearer ${myParam}`);
     // console.log(headers);
-    // this.http.get('http://127.0.0.1:8000/api/master/viewfinalwallet',{'headers':headers}).subscribe((res) => {
+    // this.http.get('http://109.74.206.37/user/api/master/viewfinalwallet',{'headers':headers}).subscribe((res) => {
     //   console.log(res);
     //   this.wallet = res;
     //   this.amount = this.wallet.response[0].amount;
@@ -91,13 +102,16 @@ export class IframePage implements OnInit {
   }
   placebet_up() {
     //console.log(this.socketData[this.socketData.length-1]);
-    //this.initial = this.socketData[this.socketData.length-1][0].p;
-    this.initial = 1000;
+    console.log(this.userbalance);
+    if(this.userbalance>100){
+      this.initial = this.socketData[this.socketData.length-1][0].p;
+    //this.initial = 1000;
     console.log(this.initial);
     const data = {
       market: 'BTCUSD',
       betamount: +this.input_amount,
-      duration: this.duration
+      duration: this.duration,
+      uid: this.uid
     }
     console.log(data.duration);
     const urlParams = new URLSearchParams(window.location.search);
@@ -107,19 +121,19 @@ export class IframePage implements OnInit {
     .set('Access-Control-Allow-Origin', '*')
     .set('Authorization',`Bearer ${myParam}`);
     console.log(headers);
-    this.http.post('http://127.0.0.1:8000/api/master/placebet',data,{'headers':headers}).subscribe((res:any) => {
+    this.http.post('http://109.74.206.37/user/api/master/placebet',data,{'headers':headers}).subscribe((res:any) => {
       console.log(res);
       this.exposure = res.response.exposure;
-      this.http.get('http://127.0.0.1:8000/api/master/viewfinalwallet',{'headers':headers}).subscribe((res:any) => {
+      this.http.get('http://109.74.206.37/user/api/master/viewfinalwallet',{'headers':headers}).subscribe((res:any) => {
         this.amount = res.response[0].amount;
       })
       setTimeout(() => {
         var payout = this.payout.toString();
         var payout_arr = payout.split(".");
         console.log(payout_arr);
-        //console.log(this.socketData[this.socketData.length-1]);
-        //this.final = this.socketData[this.socketData.length-1][0].p;
-        this.final = 1500;
+        console.log(this.socketData[this.socketData.length-1]);
+        this.final = this.socketData[this.socketData.length-1][0].p;
+        //this.final = 1500;
         console.log(this.final);
         const val = {
           market: 'BTCUSD',
@@ -131,18 +145,22 @@ export class IframePage implements OnInit {
           profitloss: this.final > this.initial ? ((+payout_arr[1] * data.betamount) / 100) : this.final < this.initial ? -data.betamount : 0
         }
         console.log(val);
-        this.http.post('http://127.0.0.1:8000/api/master/finalbet',val,{'headers':headers}).subscribe((res:any) => {
+        this.http.post('http://109.74.206.37/user/api/master/finalbet',val,{'headers':headers}).subscribe((res:any) => {
           
           console.log(res);
           this.exposure = 0;
           console.log(this.exposure);
-          this.http.get('http://127.0.0.1:8000/api/master/viewfinalwallet',{'headers':headers}).subscribe((res:any) => {
+          this.http.get('http://109.74.206.37/user/api/master/viewfinalwallet',{'headers':headers}).subscribe((res:any) => {
             this.amount = res.response[0].amount;
           })
         })
       }, +this.timer * 60 * 1000);
     })
-
+    }
+    
+    else{
+      console.log('low balance');
+    }
 
   }
 
@@ -177,6 +195,16 @@ export class IframePage implements OnInit {
   pay_out(event: any) {
     console.log(event.target.value);
     this.duration = event.target.value;
+    const headers= new HttpHeaders()
+    .set('content-type', 'application/json')
+    .set('Access-Control-Allow-Origin', '*')
+    .set('Authorization',`Bearer ${this.token}`);
+    
+    // this.http.get('http://109.74.206.37/user/api/master/singlepayout?marketid=1&timer='+event.target.value,{'headers':headers}).subscribe((res:any)=>{
+    //   console.log(res);
+    //   this.payout = res.response[0].payout;
+    //   this.timer = res.response[0].timer;
+    // })
     this.bet.single_payout(event.target.value).subscribe((res) => {
       console.log(res);
       this.payout = res.response[0].payout;
@@ -298,7 +326,7 @@ export class IframePage implements OnInit {
       if (this.dataPoints.length > 1000) {
         console.log("if part");
         const subject = webSocket("wss://socket.polygon.io/crypto");
-        subject.next({ action: "auth", params: "6sEFcNe2upitHW5lt9dp7EfkIuxoR58k" });
+        subject.next({ action: "auth", params: "ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6" });
         subject.next({ action: "subscribe", params: "XT.BTC-USD" });
         subject.subscribe((res) => {
           this.socketData = res;
@@ -341,7 +369,7 @@ export class IframePage implements OnInit {
   }
   gethistory() {
     return new Promise<void>((resolve, reject) => {
-      this.http.get('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=6sEFcNe2upitHW5lt9dp7EfkIuxoR58k')
+      this.http.get('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6')
         .subscribe((data) => {
           this.history.push(data);
           var interval = 340;
@@ -448,38 +476,53 @@ export class IframePage implements OnInit {
     .set('Access-Control-Allow-Origin', '*')
     .set('Authorization',`Bearer ${myParam}`);
     console.log(headers);
-    this.http.get('http://127.0.0.1:8000/api/master/getmarketbytype?type='+type,{'headers':headers}).subscribe((res:any) => {
+    this.http.get('http://109.74.206.37/user/api/master/getmarketbytype?type='+type,{'headers':headers}).subscribe((res:any) => {
       this.markets = res.response;
       console.log(this.markets);
     })
   }
 
   getcryptograph(abbv:string,id:number) {
+   console.log(id);
     this.market_names.push(abbv);
-    
+    const urlParams = new URLSearchParams(window.location.search);
+    const myParam = urlParams.get('token');
+    const headers= new HttpHeaders()
+    .set('content-type', 'application/json')
+    .set('Access-Control-Allow-Origin', '*')
+    .set('Authorization',`Bearer ${myParam}`);
+    console.log(headers);
+    // this.http.get('http://109.74.206.37/user/api/master/viewtimers_iframe?marketid='+id,{'headers':headers}).subscribe((res:any) => {
+    //   console.log(res);
+    //   //this.timers = res.response[0].payouts;
+    //   this.timers = res.response;
+    // })
+    // $(document).ready(function () {
       this.bet.view_timers(id).subscribe((res) => {
         console.log(res);
         this.timers = res.response[0].payouts;
-        
+        console.log(this.timers);
+        // this.payout = res.response[0].payout;
+        // console.log(this.payout);
       })
       var history = [];
       var arr1 = [];
       var dataCount;
-      this.http.get(`https://api.polygon.io/v2/aggs/ticker/${abbv}/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=6sEFcNe2upitHW5lt9dp7EfkIuxoR58k`)
+      this.http.get(`https://api.polygon.io/v2/aggs/ticker/${abbv}/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6`)
       .subscribe((data)=>{
         history.push(data);
         for(var i=0;i<history[0].results.length;i++){
           arr1.push(history[0].results[i].c)
         }
       })
-      const subject = webSocket("wss://ws.finnhub.io?token=c5g1l4qad3i9cg8uch10");
-      //subject.next({ action: "auth", params: "6sEFcNe2upitHW5lt9dp7EfkIuxoR58k" });
-      subject.next({'type':'subscribe', 'symbol': 'COINBASE:BTC-USD'});
+      const subject = webSocket("wss://socket.polygon.io/crypto");
+      subject.next({ action: "auth", params: "ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6" });
+      subject.next({ action: "subscribe", params: "XT.BTC-USD" });
       var val;
       subject.subscribe((data)=>{
-        //console.log(data);
+        //console.log('socket',data);
         if(data!=undefined){
-          var data = data['data'];
+          var data = data;
           val = data;
           this.socketData = [];
           this.socketData.push(data);
@@ -494,7 +537,10 @@ export class IframePage implements OnInit {
 
       var stockChart = new CanvasJS.StockChart("chartContainer", {
         theme: "dark1", //"light2", "dark1", "dark2"
-        
+        // title: {
+        //   text: `${abbv}`,
+        //   backgroundColor: "#172331"
+        // },
         exportEnabled: false,
         rangeChanged: function (e) {
           rangeChangedTriggered = true;
@@ -512,6 +558,8 @@ export class IframePage implements OnInit {
             labelFontSize: 15,
             labelFontColor:"#ccc",
             labelAutoFit: true,
+            // interval: 15,
+            // intervalType: 'second',
             valueFormatString: "HH:mm:s",
             stripLines: [{
               showOnTop: true,
@@ -523,6 +571,7 @@ export class IframePage implements OnInit {
             }],
           },
           axisY2: {
+            //title: "Price",
             valueFormatString: "###.0000",
             gridThickness: 0.15,
             gridColor: "grey",
@@ -577,7 +626,7 @@ export class IframePage implements OnInit {
       });
 
 
-     
+      // var dataCount, y2start = arr1[0], interval = 340, xstart = val[0].t;
       setTimeout(() => {
         var dataCount, y2start = arr1[0], interval = 1000, xstart = val[0].t - (16 * 60 * 1000);
         dataCount = history[0].results.length;
@@ -602,7 +651,7 @@ export class IframePage implements OnInit {
         }
         stockChart.options.charts[0].axisY2.stripLines[0].value = dataPoints[dataPoints.length - 1].y;
         //console.log(stockChart.options.charts[0].axisY2.stripLines[0]["value"].toString().substring(stockChart.options.charts[0].axisY2.stripLines[0]["value"].toString().indexOf('.')+1).split(''));
-        
+        //console.log('data after .',stockChart.options.charts[0].axisY2.stripLines[0]["value"].toString().split('.')[1].length);
         if(stockChart.options.charts[0].axisY2.stripLines[0]["value"]%1!=0){
           var striplength = stockChart.options.charts[0].axisY2.stripLines[0]["value"].toString().split('.')[1].length
           if(striplength<=4){
@@ -624,7 +673,7 @@ export class IframePage implements OnInit {
             var before = stockChart.options.charts[0].axisY2.stripLines[0]["value"].toString().split('.')[0];
             console.log(append);
             console.log(before);
-            
+            //console.log(stockChart.options.charts[0].axisY2.stripLines[0]["value"]+append[0]+append[1]+append[2]+append[3])
             stockChart.options.charts[0].axisY2.stripLines[0].label = before+'.'+append[0]+append[1]+append[2]+append[3];
 
           }
@@ -634,7 +683,7 @@ export class IframePage implements OnInit {
         }
         sessionStorage.setItem('time', dataPoints[dataPoints.length - 1].x);
         stockChart.options.charts[0].axisX.stripLines[0].value = dataPoints[dataPoints.length - 1].x;
-        
+        //stockChart.options.charts[0].axisX.stripLines[0].label = "Beginning of trade";
         xstart = xVal;
         dataCount = 1;
         y2start = yVal;
@@ -655,12 +704,13 @@ export class IframePage implements OnInit {
         }
         stockChart.render();
         stockChart.navigator.axisX[0].set("maximum", new Date(xVal + (10 * 1000)));
-        
+        // console.log(stockChart.navigator.axisX[0].get("intervalType"),
+        //   stockChart.navigator.axisX[0].get("interval"), stockChart.navigator.axisX[0].get("minimum"));
         var max = Math.max(...arr1);
         var max_trunc = Math.trunc(max) + 10;
         var min_trunc = Math.trunc(dataPoints[dataPoints.length - 1].y);
 
-       
+        //stockChart.charts[0].axisY2[0].set("interval",);
 
         setTimeout(function () {
           setTimeout(function () {
@@ -686,7 +736,7 @@ export class IframePage implements OnInit {
       var history = [];
       var arr1 = [];
       var dataCount;
-      fetch('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=6sEFcNe2upitHW5lt9dp7EfkIuxoR58k')
+      fetch('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/minute/2021-10-26/2021-10-26?adjusted=true&sort=asc&apiKey=ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6')
         .then(response => response.json())
         .then((data) => {
           history.push(data);
@@ -700,7 +750,7 @@ export class IframePage implements OnInit {
       var val;
       
       socket.addEventListener('open', function (event) {
-        socket.send(JSON.stringify({ action: "auth", params: "6sEFcNe2upitHW5lt9dp7EfkIuxoR58k" }));
+        socket.send(JSON.stringify({ action: "auth", params: "ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6" }));
         socket.send(JSON.stringify({ action: "subscribe", params: "XT.BTC-USD" }));
         
       });

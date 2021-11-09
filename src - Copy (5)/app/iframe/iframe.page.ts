@@ -16,7 +16,7 @@ export class IframePage implements OnInit {
       var history = [];
       var arr1 = [];
       var dataCount;
-      fetch('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/minute/2021-10-27/2021-10-27?adjusted=true&sort=asc&apiKey=6sEFcNe2upitHW5lt9dp7EfkIuxoR58k')
+      fetch('https://api.polygon.io/v2/aggs/ticker/X:BTCUSD/range/1/minute/2021-10-27/2021-10-27?adjusted=true&sort=asc&apiKey=ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6')
       .then(response => response.json())
       .then((data) => {
         history.push(data);
@@ -31,7 +31,7 @@ export class IframePage implements OnInit {
       var val;
       // Connection opened -> Subscribe
       socket.addEventListener('open', function (event) {
-          socket.send(JSON.stringify({action:"auth",params:"6sEFcNe2upitHW5lt9dp7EfkIuxoR58k"}));
+          socket.send(JSON.stringify({action:"auth",params:"ju5mjYL3pwvojO1DjYV3zxdFXUxuHtx6"}));
           socket.send(JSON.stringify({action:"subscribe",params:"XT.BTC-USD"}));
           //socket.send(JSON.stringify({'type':'subscribe', 'symbol': 'COINBASE:BTC-USD'}))
       });

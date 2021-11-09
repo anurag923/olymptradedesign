@@ -6,8 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  private login_url = "http://127.0.0.1:8000/api/user_login";
-  private reg_url = "http://127.0.0.1:8000/api/user_register";
+  private login_url = "http://109.74.206.37/user/api/user_login";
+  private reg_url = "http://109.74.206.37/user/api/user_register";
 
   constructor(private http:HttpClient) { }
 
