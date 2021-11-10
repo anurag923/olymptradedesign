@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Ionic App</title>
+
+  <base href="/" />
+
+  <meta name="color-scheme" content="light dark" />
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<!--  -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--  -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+<link rel="stylesheet" href="assets/css/form.css">
+<link rel="stylesheet" href="assets/css/forms1.css">
+
+
+<!--  -->
+
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript" src="http://calendar.fxstreet.com/scripts/mini"></script>
+ 
+    
+<script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "700px";
+    document.getElementById("main").style.marginLeft = "750px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+  <script>
+    function openmarket() {
+      document.getElementById("mySidebar-market").style.width = "350px";
+      document.getElementById("main").style.marginLeft = "400px";
+    }
+    
+    function closemarket() {
+      document.getElementById("mySidebar-market").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+    <script>
+      function openevent() {
+        document.getElementById("mySidebar-event").style.width = "350px";
+        document.getElementById("main").style.marginLeft = "400px";
+      }
+      
+      function closeevent() {
+        document.getElementById("mySidebar-event").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+       <script>
+        function openhelp() {
+          document.getElementById("mySidebar-help").style.width = "350px";
+          document.getElementById("main").style.marginLeft = "400px";
+        }
+        
+        function closehelp() {
+          document.getElementById("mySidebar-help").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+          <script>
+            function opensetting() {
+              document.getElementById("mySidebar-setting").style.width = "350px";
+              document.getElementById("main").style.marginLeft = "400px";
+            }
+            
+            function closesetting() {
+              document.getElementById("mySidebar-setting").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";
+            }
+            </script>
+    
+    <script>
+    
+      </script>
+</head>
+
+
+<body background-color="#000">
+  <app-root></app-root>
+  
+</body>
+
+</html>

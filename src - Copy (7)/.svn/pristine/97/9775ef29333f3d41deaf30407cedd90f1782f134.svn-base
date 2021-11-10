@@ -1,0 +1,286 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      
+        <div class="container pt-2">
+        <ion-grid  class=" p-0 md hydrated">
+          <ion-row  class="md hydrated ">
+            <ion-col   size-lg="4" size-md="4" class="home-tabs md hydrated" style="">
+              <ion-title  class="heading  md title-default hydrated">
+                <div class="com-header__box ">
+                  <a class="com-header__logo home-page-title" target="_self" rel="noopener noreferrer">
+                    <svg fill="none" height="18" viewBox="0 0 146 18" width="146"><g clip-rule="evenodd" fill-rule="evenodd"><path d="M.083 9.492c0 9.49 14.268 9.49 14.268 0C14.35 0 .084 0 .084 9.492zm3.65 0c0-4.91 6.968-4.91 6.968 0-.075.86-.475 1.66-1.12 2.245s-1.488.907-2.364.907c-.875 0-1.719-.324-2.364-.907s-1.044-1.385-1.12-2.245zm17.42-6.873h-3.567v13.745h8.627v-3.192h-5.06zM32.934 7.2h-.166L30.28 2.62h-3.817v.49l4.646 7.446v5.81h3.484v-5.81l4.728-7.446v-.49h-3.899zM48.529 8.51l-5.475-5.972h-1.328v13.827h3.65v-6.137l2.986 3.029h.415l2.986-3.029v6.137h3.65V2.62H54.17l-5.64 5.89zm17.005-5.89h-6.139v13.745h3.567v-3.518h2.571c6.637 0 6.637-10.228 0-10.228zm0 7.036h-2.572V5.728h2.571c2.075.082 1.91 3.929 0 3.929zm12.774-3.928h3.403v10.637h3.483V5.727h3.401V2.62H78.308zM97.472 2.62h-6.138v13.745H94.9v-4.01h1.825l2.405 4.01h3.982v-.491l-2.737-4.418c3.567-2.29 2.571-8.836-2.904-8.836zm0 6.545H94.9V5.727h2.57c1.992.082 1.91 3.437 0 3.437zm13.439-6.71l-6.305 13.419v.491h3.483l.83-1.718h5.475l.83 1.718h3.483v-.491l-6.221-13.418h-1.576zm-.747 9.165l1.576-3.6 1.577 3.6zm16.176-9h-5.226v13.745h5.226c9.043 0 9.043-13.745 0-13.745zm0 10.554h-1.658V5.809h1.658c4.397 0 4.397 7.364 0 7.364zm13.522.082V10.8h4.728V7.692h-4.728V5.727h5.143V2.62h-8.71v13.745h8.876v-3.11z" fill="#fff"></path><path d="M7.051 10.8l-5.392 6.545h10.784z" fill="#2aa76d"></path><path d="M43.386 0l4.977 4.909L53.34 0z" fill="#df553a"></path></g></svg>
+                  </a>
+                  <a href="" class="dispaly-icon">
+                    <ion-icon name="disc-outline"></ion-icon>
+                   </a>
+
+                    <ion-menu side="start" color="primary" content-id="main-content" class="dispaly-icon-menu">
+                      <ion-header>
+                        <ion-toolbar translucent class="mob">
+                          <ion-title>Menu</ion-title>
+                        </ion-toolbar>
+                      </ion-header>
+                      <ion-content>
+                        <ion-list>
+                          <ion-item>
+                            <ion-icon name="mail" slot="start"></ion-icon>
+                            <ion-label>Inbox</ion-label>
+                          </ion-item>
+                          <ion-item>
+                            <ion-icon name="paper-plane" slot="start"></ion-icon>
+                            <ion-label>Outbox</ion-label>
+                          </ion-item>
+                          <ion-item>
+                            <ion-icon name="heart" slot="start"></ion-icon>
+                            <ion-label>Favorites</ion-label>
+                          </ion-item>
+                          <ion-item>
+                            <ion-icon name="archive" slot="start"></ion-icon>
+                            <ion-label>Archived</ion-label>
+                          </ion-item>
+                          <ion-item>
+                            <ion-icon name="trash" slot="start"></ion-icon>
+                            <ion-label>Trash</ion-label>
+                          </ion-item>
+                          <ion-item>
+                            <ion-icon name="warning" slot="start"></ion-icon>
+                            <ion-label>Spam</ion-label>
+                          </ion-item>
+                        </ion-list>
+                      </ion-content>
+                    </ion-menu>
+                
+                    <div class="ion-page dispaly-icon" id="main-content" >
+                      <ion-header>
+                        <ion-toolbar>
+                          <ion-buttons slot="start">
+                            <ion-menu-button></ion-menu-button>
+                          </ion-buttons>
+                          <ion-title>Inbox</ion-title>
+                        </ion-toolbar>
+                      </ion-header>
+                      <ion-content class="ion-padding">
+                        <ion-button  onclick="openMenu()">Open Menu</ion-button>
+                      </ion-content>
+                    </div>
+           
+
+
+                 
+                </div>
+
+              </ion-title>
+            </ion-col>
+            <ion-col  size-lg="4" size-md="4"  class="home-tabs md hydrated" >
+              
+        <nav class="com-header-links home-page-title">
+                  <ul class="com-header-links__list">
+                    <li class="com-header-links__item">
+                      <a class="com-header-c-nav-link" href="#">
+                        <span >About Us</span>
+                      </a>
+                    </li>
+                    <li class="com-header-links__item">
+                      <a class="com-header-c-nav-link" href="#">
+                        <span >Help Center</span>
+                      </a>
+                    </li>
+                    <li class="com-header-links__item">
+                      <a class="com-header-c-nav-link" href="">
+                        <span >Assets</span>
+                      </a>
+                    </li>
+                    <li class="com-header-links__item">
+                      <a class="com-header-c-nav-link" href="#">
+                        <span data-trans="op_insights_title">Insights</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+          
+            </ion-col>
+            <ion-col  size-md="4" size-lg="4" class="home-tabs md hydrated btn-right" >
+              <div>
+                <ion-button href="#"  color="light" class="omp_login" slot="end">Login</ion-button>
+               <ion-button href="#"  color="primary" class="omp_login" slot="end">Registation</ion-button>
+              </div>
+            </ion-col>
+          </ion-row>     
+        </ion-grid>
+        </div>
+  
+    </ion-title>
+  </ion-toolbar>
+
+
+  <div class="conatiner-fluid">
+    <!-- <ion-grid> -->
+      <div class="login-main_sec login_main" style="--auth-form-max-size:354px; --auth-form-project-background:#0b1118;">
+        <!-- <ion-row>
+          <ion-col size-md="7" size-lg="7" size-xs="7" class="bg">
+  
+          </ion-col> -->
+          <!-- <ion-col size-md="5" size-lg="5" size-xs="5"> -->
+            <div class="btn-login login_main_btn"></div>
+            <div class="login_h_over login_h_sec" data-test="login_form_layout">
+               <div class="oly_login">
+                <div class="oly_log_position">
+                  <div class="oly_log-header_flex oly_log-header">
+                    <header class="oly_log_TabsHeader oly_log_Tabs" role="tablist">
+                      <a class="ButtonBase-module-host-3Fo oly_tab_modal" role="tab" data-test="form-tab-signin" style="width: 50%;">
+                        <div class="oly_log_tabs_title" style="text-align: center;">
+                          <span class="log_tabs_title_inner">
+                            <span data-trans="auth_form_login">Login</span>
+                          </span>
+                          <span class="log_tabs_title_inner oly-log_title_inner_text" style="opacity: 1; will-change: opacity;">
+                            <span data-trans="auth_form_login">Login</span>
+                          </span>
+                        </div>
+                      </a>
+                      <a class="ButtonBase-module-host-3Fo oly_tab_modal" role="tab" data-test="form-tab-signup" style="width: 50%;">
+                        <div class="oly_log_tabs_title" style="text-align: center;">
+                          <span class="log_tabs_title_inner">
+                            <span data-trans="auth_form_registration">Registration</span>
+                          </span>
+                          <span class="log_tabs_title_inner oly-log_title_inner_text" style="opacity: 0; will-change: opacity;">
+                            <span data-trans="auth_form_registration">Registration</span>
+                          </span>
+                        </div>
+                      </a>
+                      <div class="oly_login_border" style="width: 100%;">
+                      </div>
+                      <div class="oly_login_border_color oly_login_border" style="width: 50%; transform: translateX(0%); will-change: transform;">&nbsp;</div>
+                    </header>
+                  </div>
+                </div>
+                <div class="login_form_flex nm6YeCH2">
+                  <div class="login_form_flex_inner">
+                    <div style="overflow-x: hidden;">
+                      <div class="login_TabsContainer" style="transform: translateX(0%); will-change: transform;">
+                        <div class="TabsPanel-module-host-34C login_panel" style="visibility: inherit;">
+                          <form action="">
+                            <div class="oly_log_form">
+                              <div class="log_form_block" data-test="input-email">
+                                <div class="log_form_block_inner">
+                                  <div class="log_form_TextField">
+                                    <input class="log_form_InputBase log_form_input_inner log_form_padd TextField-module-nativeInput_size_medium-22D" type="email" name="email" autocomplete="username" value="">
+                                    <label class="log_form_label" for="email">
+                                      <span data-trans="pro_email">Email</span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <div class="oly_log_form">
+                              <div class="log_form_block" data-test="input-email">
+                                <div class="log_form_block_inner">
+                                  <div class="log_form_TextField">
+                                    <input class="log_form_InputBase log_form_input_inner log_form_padd TextField-module-nativeInput_size_medium-22D" type="password" name="password" autocomplete="Password" value="">
+                                    <label class="log_form_label" for="Password">
+                                      <span data-trans="pro_email">Password</span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="oly_log_form">
+                              <div class="log_form_block" data-test="input-email">
+                                <label>Email</label>
+                                <input type="text">
+                                <!-- <label class="Checkbox-module">
+                                  <input class="Checkbox-module-item" type="checkbox" name="dont_remember" value="">
+                                  <div class="Checkbox-module-item_inner"></div>
+                                  <div class="Checkbox-module-remender">
+                                    <span data-trans="user_tpl_not_my_comp">Do not remember me</span>
+                                  </div>
+                                </label> -->
+                              </div>
+                            </div>
+                            <div class="oly_log_form">
+                              <div>
+                                <input name="recaptcha" type="hidden" value="">
+                                <div class="captcha" style="width: 304px; height: 78px;">
+                                  <div style="width: 304px; height: 78px; transform: scale(1);">
+                                    <div>
+                                      <iframe title="reCAPTCHA" src="https://www.recaptcha.net/recaptcha/api2/anchor?ar=2&amp;k=6Lc5ACgTAAAAABL3s8j9VkkUn4Engv4QtdCLd9qI&amp;co=aHR0cHM6Ly9vbHltcHRyYWRlLmNvbTo0NDM.&amp;hl=en&amp;v=tftmXwdbgCvrXiHxr5HGbIaL&amp;size=normal&amp;cb=av3kmcu76p8u" width="304" height="78" role="presentation" name="a-bq8vt5b79ftj" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                                    </div>
+                                    <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                  </div>
+                                  <iframe style="display: none;"></iframe>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="oly_log_form">
+                              <button type="button" class="Link-module-host-1GB">
+                                <span data-trans="auth_forgot_password">Forgot your password?</span>
+                              </button>
+                            </div>
+                            <button class="ButtonBase-login Button-login-transition" type="submit" data-test="form-signin-button">
+                              <div class="button-inner">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="Loader-module-inner-2TO">
+                                  <path fill="currentColor" fill-opacity="0.05" fill-rule="evenodd" d="M0 8a8 8 0 1016 0A8 8 0 000 8zm13.333-.001a5.333 5.333 0 11-10.666 0 5.333 5.333 0 0110.666 0z" clip-rule="evenodd"></path>
+                                  <path fill="url(#Loader2_left_gradient)" d="M8 0a8 8 0 00-4.02 14.918 1.333 1.333 0 101.342-2.305A5.333 5.333 0 018 2.666 1.333 1.333 0 008 0z"></path>
+                                  <path fill="url(#Loader2_right_gradient)" d="M10.678 3.386A5.333 5.333 0 018 13.333a1.333 1.333 0 100 2.666 8 8 0 004.02-14.918 1.333 1.333 0 10-1.342 2.305z"></path>
+                                  <defs>
+                                    <linearGradient id="Loader2_left_gradient" x1="7.5" x2="7.5" y1="0" y2="8" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="currentColor" stop-opacity="0.75"></stop>
+                                      <stop offset="0.812" stop-color="currentColor" stop-opacity="0.1"></stop>
+                                      <stop offset="1" stop-color="currentColor" stop-opacity="0.01"></stop>
+                                    </linearGradient>
+                                    <linearGradient id="Loader2_right_gradient" x1="8" x2="8" y1="15.999" y2="8" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="currentColor" stop-opacity="0.75"></stop>
+                                      <stop offset="0.824" stop-color="currentColor" stop-opacity="0.1"></stop>
+                                      <stop offset="1" stop-color="currentColor" stop-opacity="0.01"></stop>
+                                    </linearGradient>
+                                  </defs>
+                                </svg>
+                              </div>
+                              <span class="Buttonlogin_inner">
+                                <span class="Buttonlogin_inner_text">
+                                  <span>Log In</span>
+                                </span>
+                              </span>
+                            </button>
+                            <div class="">
+                              <div class="continue">
+                                <span>Or Continue With</span>
+                              </div>
+                              <div class="icon-main">
+                                <a class="icon-inner aCJkaQT_" href="/soc-redirect/aa?redirect_url=https%3A%2F%2Folymptrade.com%2Fplatform" data-test="soc-redirect-aa" title="Apple" aria-disabled="false">
+                                  <ion-icon name="logo-apple" style="color: black;"></ion-icon>
+                                </a>
+                                <a class="icon-inner yIOXb7mY" href="/soc-redirect/fb?redirect_url=https%3A%2F%2Folymptrade.com%2Fplatform" data-test="soc-redirect-fb" title="Facebook" aria-disabled="false">
+                                
+                                  <ion-icon name="logo-facebook" style="color: white;"></ion-icon>
+                                </a>
+                                <a class="icon-inner cMoMgkNn" href="/soc-redirect/gp?redirect_url=https%3A%2F%2Folymptrade.com%2Fplatform" data-test="soc-redirect-gp" title="Google" aria-disabled="false">
+                              
+                                <ion-icon name="logo-google" style="color: white;"></ion-icon>
+                              </a>
+                            </div>
+                          </div>
+
+
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+               </div>
+
+            </div>
+<!--             
+          </ion-col>
+        </ion-row> -->
+      </div>
+      
+    <!-- </ion-grid> -->
+  </div>
+</ion-header>
