@@ -1,0 +1,21 @@
+.container-fluid{
+       align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        height: 100%;
+        margin: 0 auto;
+        padding: 1rem 2.5rem;
+}
+.about-p-intro{
+    background-image: url('../../assets/images/about-intro-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}

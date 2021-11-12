@@ -1,0 +1,756 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      
+        <div class="container-fluid">
+        <ion-grid  class=" p-0 md hydrated" style="display: none;">
+          <ion-row  class="md hydrated ">
+            <ion-col   size-lg="4" size-md="4" class="home-tabs md hydrated">
+              <ion-title  class="heading  md title-default hydrated">
+                <div class="com-header__box ">
+                  <a class="com-header__logo home-page-title" target="_self" rel="noopener noreferrer" href="olymphome">
+                   <img src="../../assets/images/OLYMPUS.jpg" alt="">
+                  </a>
+                  <a href="" class="dispaly-icon">
+                    <ion-icon name="disc-outline"></ion-icon>
+                   </a>
+
+                    <ion-menu side="start" color="primary" content-id="main-content" class="dispaly-icon-menu">
+                      <ion-header>
+                        <ion-toolbar translucent class="mob">
+                          <ion-title>Menu</ion-title>
+                        </ion-toolbar>
+                      </ion-header>
+                      <ion-content>
+                        <ion-list>
+                          <ion-item>
+                            <ion-icon name="mail" slot="start"></ion-icon>
+                            <ion-label>Inbox</ion-label>
+                          </ion-item>
+                          <ion-item>
+                            <ion-icon name="paper-plane" slot="start"></ion-icon>
+                            <ion-label>Outbox</ion-label>
+                          </ion-item>
+                          <ion-item>
+                            <ion-icon name="heart" slot="start"></ion-icon>
+                            <ion-label>Favorites</ion-label>
+                          </ion-item>
+                          <ion-item>
+                            <ion-icon name="archive" slot="start"></ion-icon>
+                            <ion-label>Archived</ion-label>
+                          </ion-item>
+                          <ion-item>
+                            <ion-icon name="trash" slot="start"></ion-icon>
+                            <ion-label>Trash</ion-label>
+                          </ion-item>
+                          <ion-item>
+                            <ion-icon name="warning" slot="start"></ion-icon>
+                            <ion-label>Spam</ion-label>
+                          </ion-item>
+                        </ion-list>
+                      </ion-content>
+                    </ion-menu>
+                
+                    <div class="ion-page dispaly-icon" id="main-content" >
+                      <ion-header>
+                        <ion-toolbar>
+                          <ion-buttons slot="start">
+                            <ion-menu-button></ion-menu-button>
+                          </ion-buttons>
+                          <ion-title>Inbox</ion-title>
+                        </ion-toolbar>
+                      </ion-header>
+                      <ion-content class="ion-padding">
+                        <ion-button  onclick="openMenu()">Open Menu</ion-button>
+                      </ion-content>
+                    </div>
+             </div>
+
+              </ion-title>
+            </ion-col>
+            <ion-col  size-lg="4" size-md="4"  class="home-tabs md hydrated" >
+              
+        <nav class="com-header-links home-page-title">
+                  <ul class="com-header-links__list">
+                    <li class="com-header-links__item">
+                      <a class="com-header-c-nav-link" href="about">
+                        <span >About Us</span>
+                      </a>
+                    </li>
+                    <li class="com-header-links__item">
+                      <a class="com-header-c-nav-link" href="help">
+                        <span >Help Center</span>
+                      </a>
+                    </li>
+                    <li class="com-header-links__item">
+                      <a class="com-header-c-nav-link" href="assets">
+                        <span >Assets</span>
+                      </a>
+                    </li>
+                    <li class="com-header-links__item">
+                      <a class="com-header-c-nav-link" href="insights">
+                        <span data-trans="op_insights_title">Insights</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+          
+            </ion-col>
+            <ion-col  size-md="4" size-lg="4" class="home-tabs md hydrated btn-right" >
+              <div>
+                <ion-button href="#"  color="light" class="omp_login" slot="end">Login</ion-button>
+               <ion-button href="#"  color="primary" class="omp_login" slot="end">Registation</ion-button>
+              </div>
+            </ion-col>
+          </ion-row>     
+        </ion-grid>
+        <ion-grid >
+          <ion-row>
+            <div style="display: flex; width: 100%; justify-content: space-between;">
+              <nav class="navbar navbar-expand-lg navbar-light" style="justify-content: space-between; width: 100%;">
+                <div class="com-header__box ">
+                  <a class="com-header__logo home-page-title" target="_self" rel="noopener noreferrer" href="olymphome">
+                    <img src="../../assets/images/OLYMPUS.jpg" alt="">
+                  </a>
+                  <!-- <a href="" class="dispaly-icon">
+                    <ion-icon name="disc-outline"></ion-icon>
+                   </a> -->
+                   <button class="navbar-toggler dispaly-icon" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: -2px;">
+                    <!-- <span class="navbar-toggler-icon" style="color: #fff;background-color: #fff;"></span> -->
+                    <!-- <ion-icon name="disc-outline"></ion-icon> -->
+                    <img src="../../assets/images/responsive-icon.png" alt="">
+                  </button>
+                  </div>                  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <nav class="com-header-links">
+                     <ul class="navbar-nav mr-auto com-header-links__list">
+                       <li class="nav-item active com-header-links__item">
+                         <a class="nav-link com-header-c-nav-link" href="about">
+                           <span >About Us</span>
+                         </a>
+                       </li>
+                       <li class=" nav-item com-header-links__item">
+                         <a class="nav-link com-header-c-nav-link" href="help">
+                           <span >Help Center</span>
+                         </a>
+                       </li>
+                       <li class="nav-item com-header-links__item">
+                         <a class="nav-link com-header-c-nav-link" href="assets">
+                           <span >Assets</span>
+                         </a>
+                       </li>
+                       <li class="nav-item com-header-links__item">
+                         <a class=" nav-link com-header-c-nav-link" href="insights">
+                           <span data-trans="op_insights_title">Insights</span>
+                         </a>
+                       </li>
+                     </ul>                  
+                   </nav>            
+            </div>
+         </nav>
+          <div style="padding-top: 12px;">
+            <a routerLink="/loginpage"></a>
+            <ion-button  color="light" class="omp_login" slot="end" (click)="login()">Login</ion-button>
+           <ion-button   color="primary" class="omp_login" slot="end" (click)="registration()">Registation</ion-button>
+          </div>
+            </div>
+            
+          </ion-row>
+        </ion-grid>
+        </div>
+  
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="layout">
+  <ion-grid>
+  <div class="about-p-intro">
+    <div class="container">
+      
+        <ion-row>
+          <ion-col size-lg="12" size-md="12" size-xs="12">
+            <!-- <div> -->
+            <ul class="about-olymp">
+              <li class="about-olymp__item">
+                <a class="about-olymp__link about-olymp__link_active" href="about">About Us</a>
+              </li>
+              <li class="about-olymp__item">
+                <a class="about-olymp__link" href="regulation">Regulation</a>
+              </li>
+              <li class="about-olymp__item">
+                <a class="about-olymp__link" href="terms">Legal Information</a>
+              </li>
+            </ul>
+          <!-- </div> -->
+          </ion-col>
+      
+          <ion-col size-lg="5" size-md="6" size-xs="6">
+            <div class="about__content">
+              <h1 class="about__title">
+                <span>Seven Years <br> of Impeccable Service</span>
+              </h1>
+              </div>
+          </ion-col>
+          <ion-col size-lg="7" size-md="6" size-xs="6">
+          <div class="about__content about__image">
+              <img src="../../assets/images/about_7.png" alt="" width="90%">
+            </div>
+          </ion-col>
+      
+          <ion-col size-lg="12" size-md="12" size-xs="12">
+            <p class="about-intro__description text"><span data-trans="about_page_intro_description">The Olymp Trade company has been one of the leading online brokers since 2014. Our developers, financial experts, personal, and support managers are making every effort to make your trading more comfortable and profitable year after year.</span></p>
+          </ion-col>
+        </ion-row>
+      </div>
+  </div>
+
+        <div class="container">
+        <ion-row>
+          <div class="about-statistics page__section">
+            <!-- <div class="container"> -->
+              <ion-col>
+                <h2 class="about-oly-num"><span>Olymp Trade by the Numbers</span></h2>
+                <ul class="about_statistics__list">
+                  <li class="about_statistics__card">
+                    <div class="about_statistics__card-title">
+                      <span>60 mln</span>
+                    </div>
+                    <div class="about_statistics__card-description">
+                      <span>User accounts</span>
+                    </div>
+                  </li>
+                  <li class="about_statistics__card">
+                    <div class="about_statistics__card-title">
+                      <span>$16 mln</span>
+                    </div>
+                    <div class="about_statistics__card-description">
+                      <span>Average monthly payouts</span>
+                    </div>
+                  </li>
+                  <li class="about_statistics__card">
+                    <div class="about_statistics__card-title">
+                      <span>30 mln</span>
+                    </div>
+                    <div class="about_statistics__card-description">
+                      <span >monthly transactions on the platform</span>
+                    </div>
+                  </li>
+                  <li class="about_statistics__card">
+                    <div class="about_statistics__card-title">
+                      <span >$211 mln</span>
+                    </div>
+                    <div class="about_statistics__card-description">
+                      <span >Monthly trade turnover</span>
+                    </div>
+                  </li>
+                </ul>
+              </ion-col>
+            <!-- </div> -->
+          </div>
+        </ion-row>
+        </div>
+        <div class="container-fluid">
+          <div class="about-countries page__section">
+            <ion-row>
+                <div class="container">
+                  <ion-col  size-lg="12" size-md="12" size-xs="12">
+                    <div class="about-countries__description">
+                      <span class="about-countries__title">
+                        <span data-trans="about_page_countries">Countries</span>
+                      </span>
+                      <p class="about-countries__description-text">
+                        <span data-trans="about_page_countries_description">Traders from all over the world trust Olymp Trade. The platform interface is localized into 13 languages. </span>
+                      </p>
+                    </div>
+                    <div>
+                      <ul class="about-countries-list">
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/en.bdbb3c42.svg&quot;);">
+                          <span class="about-countries-list__label">English</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/id.e6269b18.svg&quot;);">
+                          <span class="about-countries-list__label">Bahasa Indonesia</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/hi.8598ad80.svg&quot;);">
+                          <span class="about-countries-list__label">Hindi</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/vi.f8534f08.svg&quot;);">
+                          <span class="about-countries-list__label">Tiếng Việt</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/ru.04117549.svg&quot;);">
+                          <span class="about-countries-list__label">Русский</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/th.d536a908.svg&quot;);">
+                          <span class="about-countries-list__label">ไทย</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/pt.6c4be365.svg&quot;);">
+                          <span class="about-countries-list__label">Português</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/ms.7c15cdde.svg&quot;);">
+                          <span class="about-countries-list__label">Bahasaa Melayu</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/tr.a430b7a9.svg&quot;);">
+                          <span class="about-countries-list__label">Türkçe</span>
+                        </li>
+                        <li class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/ar.16beae8e.svg&quot;);">
+                          <span class="about-countries-list__label">العربية</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/es.1a10aae7.svg&quot;);">
+                          <span class="about-countries-list__label">Español</span>
+                        </li>
+                        <li  class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/fr.99c6faf6.svg&quot;);">
+                          <span class="about-countries-list__label">Français</span>
+                        </li>
+                        <li class="about-countries-list__item" style="background-image: url(&quot;https://cdn1.olymptrade.com/v5/public/images/ko.c1b8d674.svg&quot;);">
+                          <span class="about-countries-list__label">한국어 </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </ion-col>
+    
+                </div>
+              
+            </ion-row>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="about-guarantees container page__section page__columns page__columns_2col">
+            <ion-row>
+              <ion-col size-lg="6" size-md="6" size-xs="12">
+                <div class="about-guarantees__content">
+                  <h2><span data-trans="about_page_guarantees_title">Guarantees</span></h2>
+                  <p class="text">
+                    <span data-trans="about_page_guarantees_description">Olymp Trade is a category A member of the Financial Commission (FinaCom), which confirms the company's reliability and the high quality of services. The quality of the platform's trade execution is certified by the Verify My Trade independent examination.</span>
+                  </p>
+                    <a class="link about-guarantees__link" href="/regulation">
+                      <span data-trans="about_page_learn_more_about_the_regulations">Learn More About Regulations</span>
+                    </a>
+                  </div>
+                 
+              </ion-col>
+              <ion-col size-lg="6" size-md="6" size-xs="12">
+                <div class="about-guarantees__images">
+                  <!-- <img src="https://cdn1.olymptrade.com/v5/public/images/guarantees-finacom.ff0cedd3.svg" alt="Finacom" loading="lazy"><img class="about-guarantees__image-verify" src="https://cdn1.olymptrade.com/v5/public/images/verify@1x.361990f5.png" srcset="https://cdn1.olymptrade.com/v5/public/images/verify@1x.361990f5.png , https://cdn1.olymptrade.com/v5/public/images/verify@2x.fc22dfab.png 2x" alt="Execution Certification" loading="lazy"> -->
+                  <img src="../../assets/images/aboutpage-verify-img.png" alt="">
+                </div>
+              </ion-col>
+            </ion-row>
+          </div>
+        </div>
+        <div class="about-charity">
+          <div class="container page__section about__columns about__columns_2col">
+            <ion-row>
+              <ion-col  size-lg="6" size-md="6" size-xs="12">
+                <div class="page__section">
+                  <h2><span>Our Charity Missions</span></h2>
+                  <p class="text text_spacer">
+                    <span >We believe everyone has the right to a decent life. So, we channel a part of our earnings to bring positive change to local communities.</span>
+                  </p>
+                  <p class="text">
+                    <span >Olymp Trade partners with trusted humanitarian organizations and on-site volunteers to deliver emergency aid to disaster victims and run awareness and education programs. We also help vulnerable communities to overcome poverty and ensure healthy growth.</span>
+                  </p>
+                  <a class="link about-charity__link" href="#">
+                    <span >See how we help</span>
+                  </a>
+                  <ul class="about-labels-list">
+                    <li class="about-labels-list__item">
+                      <img src="https://cdn1.olymptrade.com/v5/public/images/rumah_zakat.3b95bbc2.svg" alt="Rumah Zakat"></li>
+                      <li class="about-labels-list__item">
+                        <img src="https://cdn1.olymptrade.com/v5/public/images/smie.e0ab6880.svg" alt="Smile Foundation"></li>
+                        <li class="about-labels-list__item">
+                          <img src="https://cdn1.olymptrade.com/v5/public/images/egyptian_red_crescent.112f19e3.svg" alt="Egyptian Red Crescent">
+                        </li>
+                        <li class="about-labels-list__item">
+                          <img src="https://cdn1.olymptrade.com/v5/public/images/dtpeduli.3466f9f8.svg" alt="DT Peduli">
+                        </li>
+                      </ul>
+                    </div>
+              </ion-col>
+              <ion-col  size-lg="6" size-md="6" size-xs="12">
+                <div class="page__section about-charity__images" >
+                  <div class="fade-in-section is-visible" data-aos="zoom-in-up">
+                    <img class="about-charity__image" src="https://cdn1.olymptrade.com/v5/public/images/about_us_charity@1x.90e79fc4.png" srcset="https://cdn1.olymptrade.com/v5/public/images/about_us_charity@1x.90e79fc4.png , https://cdn1.olymptrade.com/v5/public/images/about_us_charity@2x.a56ced95.png 2x" alt="Execution Certification" loading="lazy">
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+          </div>
+        </div>
+        <div class=" container page__section page__columns">
+          <ion-row>
+            <ion-col size-lg="6" size-md="6" size-xs="12">
+              <div >
+                <ion-slides pager="true" [options]="slideOptsThree" >
+                  <ion-slide >
+                    <div style="position: relative;">
+                      <div class="slide2_img">
+                        <img src="../../assets/images/section7img_3.png" style="border-radius: 12%; height:400px; width: 100%;">
+                      </div>
+                      <div class="slide2_text">
+                      <h4 class="sect5_slider">Awards</h4>
+                        <p class="sect4_slider">“Best Customer Support Broker”</p>
+                        <p class="sect4_slider">"Forex Brokers Awards 2020"</p>
+                      </div>
+                    </div>   
+                  </ion-slide>
+                  <ion-slide >
+                    <div style="position: relative;">
+                      <div class="slide2_img">
+                        <img src="../../assets/images/section7img_4.png" style="border-radius: 12%; height:400px; width: 100%;">
+                      </div>
+                      <div class="slide2_text">
+                      <h4 class="sect5_slider">Awards</h4>
+                        <p class="sect4_slider">“Best Customer Support Broker”</p>
+                        <p class="sect4_slider">"Forex Brokers Awards 2020"</p>
+                      </div>
+                    </div>
+                   </ion-slide>
+                   <ion-slide >
+                    <div style="position: relative;">
+                      <div class="slide2_img">
+                        <img src="../../assets/images/section7img_5.jpg" style="border-radius: 12%; height:400px; width: 100%;">
+                      </div>
+                      <div class="slide2_text">
+                      <h4 class="sect5_slider">Awards</h4>
+                        <p class="sect4_slider">“Best Customer Support Broker”</p>
+                        <p class="sect4_slider">"Forex Brokers Awards 2020"</p>
+                      </div>
+                    </div>
+                   </ion-slide>
+                   <ion-slide >
+                    <div style="position: relative;">
+                      <div class="slide2_img">
+                        <img src="../../assets/images/section7img_6.jpg" style="border-radius: 12%; height:400px; width: 100%;">
+                      </div>
+                      <div class="slide2_text">
+                      <h4 class="sect5_slider">Awards</h4>
+                        <p class="sect4_slider">“Best Customer Support Broker”</p>
+                        <p class="sect4_slider">"Forex Brokers Awards 2020"</p>
+                      </div>
+                    </div>
+                   </ion-slide>
+                   <ion-slide >
+                    <div style="position: relative;">
+                      <div class="slide2_img">
+                        <img src="../../assets/images/section7img_7.jpg" style="border-radius: 12%; height:400px; width: 100%;">
+                      </div>
+                      <div class="slide2_text">
+                      <h4 class="sect5_slider">Awards</h4>
+                        <p class="sect4_slider">“Best Customer Support Broker”</p>
+                        <p class="sect4_slider">"Forex Brokers Awards 2020"</p>
+                      </div>
+                    </div>
+                   </ion-slide>
+                   <ion-slide >
+                    <div style="position: relative;">
+                      <div class="slide2_img">
+                        <img src="../../assets/images/section7img_8.jpg" style="border-radius: 12%; height:400px; width: 100%;">
+                      </div>
+                      <div class="slide2_text">
+                      <h4 class="sect5_slider">Awards</h4>
+                        <p class="sect4_slider">“Best Customer Support Broker”</p>
+                        <p class="sect4_slider">"Forex Brokers Awards 2020"</p>
+                      </div>
+                    </div>
+                   </ion-slide>
+                  
+                  
+                </ion-slides>
+        
+             </div>
+            </ion-col>
+            <ion-col size-lg="6" size-md="6" size-xs="12">
+              <div class="about-achievements__content">
+                <h2>
+                  <span data-trans="about_page_achievements_title">Our Achievements</span></h2>
+                  <p class="text"><span data-trans="about_page_achievements_description">Olymp Trade has repeatedly received international professional trading community awards. However, we don't think that another award is a reason to ease off. We continue to develop.</span>
+                  </p>
+                </div>
+            </ion-col>
+          </ion-row>
+        </div>
+        <div class="about-support container page__section">
+          <ion-row>
+            <ion-col size-lg="6" size-md="6" size-xs="12">
+              <div class="about-support__content"><h2><span data-trans="support">Support</span></h2><p class="text"><span data-trans="about_page_support_descr">Choose the most convenient way to contact our support team. Ask your question via email or online chat.
+                Experienced professionals will answer any of your questions about the platform.</span></p><a class="link about-support__link"><span data-trans="ask_a_question">Ask a Question</span></a></div>
+            </ion-col>
+            <ion-col size-lg="6" size-md="6" size-xs="12">
+              <div class="about-support__images"><picture><source type="image/webp" srcset="https://cdn1.olymptrade.com/v5/public/images/support-image@1x.9503c621.webp , https://cdn1.olymptrade.com/v5/public/images/support-image@2x.176ebf21.webp 2x"><source srcset="https://cdn1.olymptrade.com/v5/public/images/support-image@1x.34d78a1b.png , https://cdn1.olymptrade.com/v5/public/images/support-image@2x.53c37985.png 2x"><img class="about-support__image" srcset="https://cdn1.olymptrade.com/v5/public/images/support-image@1x.34d78a1b.png , https://cdn1.olymptrade.com/v5/public/images/support-image@2x.53c37985.png 2x" alt="24/7 support" loading="lazy"></picture></div>
+            </ion-col>
+            <ion-col>
+              <div class="about-support-c-statistic">
+                <div class="about-support-c-statistic__item">
+                  <span class="about-support-c-statistic__value">
+                    <span data-trans="about_page_resolved_issues_daily_value">7000</span>
+                  </span>
+                  <span class="about-support-c-statistic__description">
+                    <span data-trans="about_page_resolved_issues_daily">resolved issues daily</span>
+                  </span>
+                </div>
+                <div class="about-support-c-statistic__item">
+                  <span class="about-support-c-statistic__value">
+                    <span data-trans="about_page_average_seconds_of_waiting_value">13</span>
+                  </span>
+                  <span class="about-support-c-statistic__description">
+                    <span data-trans="about_page_average_seconds_of_waiting">average seconds of waiting</span>
+                  </span>
+                </div>
+                <div class="about-support-c-statistic__item">
+                  <span class="about-support-c-statistic__value">
+                    <span data-trans="about_page_languages_of_communication_value">14</span>
+                  </span>
+                  <span class="about-support-c-statistic__description">
+                    <span data-trans="about_page_languages_of_communication">languages of communication</span>
+                  </span>
+                </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+        <div class="about-socials container page__section">
+          <div><h2>Stay in touch</h2></div>
+          <div class="about-socials__content">
+            <ion-row>
+              <ion-col size-lg="6" size-md="6" size-xs="12">
+                <div class="page-m-socials-c-card">
+                  <a href="//www.facebook.com/olymptradecom" class="page-m-socials-c-card__link" target="_blank" rel="nofollow noopener noreferrer">
+                    <div class="page-m-socials-c-card__title">Facebook</div>
+                    <div class="page-m-socials-c-card__header">
+                      <img class="page-m-socials-c-card__logo" src="https://cdn1.olymptrade.com/v5/public/images/olymp-logo.411abd6e.png" alt="Olymptrade">
+                      <div class="page-m-socials-c-card__header-content">
+                        <div class="page-m-socials-c-card__brand-title">Olymp Trade</div>
+                        <div class="like-button like-button_facebook">
+                          <img class="like-button__image" src="https://cdn1.olymptrade.com/v5/public/images/like.c92d1b5f.svg" alt="Like">
+                          <span class="like-button__text">Like</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="page-m-socials-c-card__like-counter">1,000,000 people like <span>Olymp Trade</span>
+                    </div>
+                    <ul class="like-list">
+                      <li class="like-list__item">
+                        <img class="like-list__image" src="https://cdn1.olymptrade.com/v5/public/images/liked1.bd8fb5c1.jpg" alt="liked">
+                        <span class="like-list__name">Emma</span>
+                      </li>
+                      <li class="like-list__item">
+                        <img class="like-list__image" src="https://cdn1.olymptrade.com/v5/public/images/liked2.e4216ba5.jpg" alt="liked">
+                        <span class="like-list__name">Jennie</span>
+                      </li>
+                      <li class="like-list__item">
+                        <img class="like-list__image" src="https://cdn1.olymptrade.com/v5/public/images/liked3.be00c58a.jpg" alt="liked">
+                        <span class="like-list__name">Kathryn</span>
+                      </li>
+                      <li class="like-list__item">
+                        <img class="like-list__image" src="https://cdn1.olymptrade.com/v5/public/images/liked4.3d11dbfd.jpg" alt="liked">
+                        <span class="like-list__name">Jennie</span>
+                      </li>
+                      <li class="like-list__item">
+                        <img class="like-list__image" src="https://cdn1.olymptrade.com/v5/public/images/liked5.df40e59d.jpg" alt="liked">
+                        <span class="like-list__name">Robert</span>
+                      </li>
+                      <li class="like-list__item">
+                        <img class="like-list__image" src="https://cdn1.olymptrade.com/v5/public/images/liked6.ecc09cea.jpg" alt="liked">
+                        <span class="like-list__name">Regina</span>
+                      </li>
+                      <li class="like-list__item">
+                        <img class="like-list__image" src="https://cdn1.olymptrade.com/v5/public/images/liked7.5e46c4c2.jpg" alt="liked">
+                        <span class="like-list__name">Adam</span>
+                      </li>
+                      <li class="like-list__item">
+                        <img class="like-list__image" src="https://cdn1.olymptrade.com/v5/public/images/liked8.e3c22dd2.jpg" alt="liked">
+                        <span class="like-list__name">James</span>
+                      </li>
+                      <li class="like-list__item">
+                        <img class="like-list__image" src="https://cdn1.olymptrade.com/v5/public/images/liked9.49d902e8.jpg" alt="liked">
+                        <span class="like-list__name">Anna</span>
+                      </li>
+                      <li class="like-list__item">
+                        <img class="like-list__image" src="https://cdn1.olymptrade.com/v5/public/images/liked10.386fed79.jpg" alt="liked">
+                        <span class="like-list__name">Sara</span>
+                      </li>
+                    </ul>
+                  </a>
+                    </div>
+              </ion-col>
+              <ion-col size-lg="6" size-md="6" size-xs="12">
+                <div class="page-m-socials-c-card">
+                  <a href="//www.youtube.com/olymptradeglobal" class="page-m-socials-c-card__link" target="_blank" rel="nofollow noopener noreferrer">
+                    <div class="page-m-socials-c-card__title">YouTube</div>
+                    <div class="page-m-socials-c-card__header">
+                      <img class="page-m-socials-c-card__logo" src="https://cdn1.olymptrade.com/v5/public/images/olymp-logo.411abd6e.png" alt="Olymptrade">
+                      <div class="page-m-socials-c-card__header-content">
+                        <div class="page-m-socials-c-card__brand-title">Olymp Trade Global</div>
+                        <div class="like-button like-button_youtube">
+                          <span class="like-button__text">Subscribe</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="page-m-socials-c-card__like-counter">93.2K Subscribers • 1K Videos • 22M Views</div>
+                    <div class="page-m-socials-c-card__banner">
+                      <img class="page-m-socials-c-card__banner" src="https://cdn1.olymptrade.com/v5/public/images/social-youtube-banner@1x.9ec42f49.jpg" srcset="https://cdn1.olymptrade.com/v5/public/images/social-youtube-banner@1x.9ec42f49.jpg 1x, https://cdn1.olymptrade.com/v5/public/images/social-youtube-banner@2x.eb8f6a3b.jpg 2x" alt="Olymp Trade YouTube">
+                    </div>
+                  </a>
+                </div>
+
+              </ion-col>
+              <ion-col size-lg="12" size-md="12" size-xs="12">
+                <div  class="section7-btn"><ion-button  size="large" color="primary" class="Start_Trading ion-color ion-color-primary md button button-large button-solid ion-activatable ion-focusable hydrated" ng-reflect-size="large" ng-reflect-color="primary">Start Trading — <span  class="p-home-c-button-desktop__extra-text">It's Free</span></ion-button></div>
+              </ion-col>
+            </ion-row>
+          </div>
+        </div>
+
+      </ion-grid>
+</div>
+<ion-footer class="com-footer">
+  <ion-toolbar class="com-footer">
+    <div class="container ">
+      <ion-grid>
+        <ion-row>
+          <ion-col  size-lg="9" size-md="12" size-xs="12">
+            <nav class="com-footer-m-nav-links com-footer-top__nav">
+              <div class="com-footer-m-nav-links__part">
+                <h3 class="com-footer-m-nav-links__title">Olymp Trade</h3>
+                <ul class="com-footer-m-nav-links__list">
+                  <li class="com-footer-m-nav-links__item">
+                    <a class="com-footer-c-nav-link" href="about">
+                      <span >About Us</span>
+                    </a>
+                  </li>
+                  <!-- <li class="com-footer-m-nav-links__item">
+                    <a class="com-footer-c-nav-link" href="">
+                      <span >Affiliate Program</span>
+                    </a>
+                  </li> -->
+                  <li class="com-footer-m-nav-links__item">
+                    <a class="com-footer-c-nav-link" href="">
+                      <span >For Partners</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="com-footer-m-nav-links__part">
+                <h3 class="com-footer-m-nav-links__title">
+                  <span >Help</span>
+                </h3>
+                <ul class="com-footer-m-nav-links__list">
+                  <li class="com-footer-m-nav-links__item">
+                    <a class="com-footer-c-nav-link" href="help">
+                      <span >Help Center</span>
+                    </a>
+                  </li>
+                  <li class="com-footer-m-nav-links__item">
+                    <a class="com-footer-c-nav-link" href="">
+                      <span >Support</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="com-footer-m-nav-links__part">
+                <h3 class="com-footer-m-nav-links__title">
+                  <span >Analytics</span>
+                </h3>
+                <ul class="com-footer-m-nav-links__list">
+                  <li class="com-footer-m-nav-links__item">
+                    <a class="com-footer-c-nav-link" href="assets">
+                      <span>Assets</span>
+                    </a>
+                  </li>
+                  <li class="com-footer-m-nav-links__item">
+                    <a class="com-footer-c-nav-link" href="inslights">
+                      <span >Insights</span>
+                    </a>
+                  </li>
+                  <li class="com-footer-m-nav-links__item">
+                    <a class="com-footer-c-nav-link" href="https://blog.olymptrade.com/ru/analytics/">
+                      <span>Blog</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </ion-col>
+          <ion-col  size-lg="3" size-md="12" size-xs="12">
+            <div class="com-footer-m-social-list">
+              <a class="com-footer-c-social-link com-footer-c-social-link_type_youtube com-footer-m-social-list__link" href="#" rel="nofollow noopener noreferrer" target="_blank">
+                <span class="com-footer-c-social-link__icon">
+                  <ion-icon name="logo-youtube" style="font-size: 30px;"></ion-icon>
+                  
+                </span>
+                <span class="com-footer-c-social-link__info">
+                  <span class="com-footer-c-social-link__amount">220K</span>
+                  <span>Youtube</span>
+                </span>
+              </a>
+              <a class="com-footer-c-social-link com-footer-c-social-link_type_fb com-footer-m-social-list__link" href="https://www.facebook.com/olymptradecom/" rel="nofollow noopener noreferrer" target="_blank">
+                <span class="com-footer-c-social-link__icon">
+                  <ion-icon name="logo-facebook"  style="font-size: 30px;"></ion-icon>
+                </span>
+                <span class="com-footer-c-social-link__info">
+                  <span class="com-footer-c-social-link__amount">1M</span>
+                  <span>Facebook</span>
+                </span>
+              </a>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size-lg="3" size-md="12" size-xs="12">
+            <div class="com-footer-m-main-info__content"><div class="com-footer-m-main-info__data">
+              <a class="com-footer-m-main-info__logo" href="platform">
+                <img src="../../assets/images/OLYMPUS.jpg" alt="">
+              </a>
+              <div class="com-footer-m-main-info__copy">© 2014&nbsp;—&nbsp;2021 OlympTrade</div></div></div>
+          </ion-col>
+          <ion-col size-lg="9" size-md="12" sixe-xs="12">
+            <ion-text>
+              <p class="com-footer-m-main-info__text"><span data-trans="footer_text_part_1">The Transactions offered by this Website can be executed only by fully competent adults.
+                Transactions with financial instruments offered on the Website involve substantial risk and trading may be very risky. If you make Transactions with the financial instruments offered on this Website, you might incur substantial losses or even lose everything in your Account. Before you decide to start Transactions with the financial instruments offered on the Website, you must review the Service Agreement and Risk Disclosure Information.</span><span data-trans="footer_text_part_2_new">The services on the Website are provided and regulated by Saledo Global LLC, registered at: First Floor, First St. Vincent Bank Ltd Building, P.O. Box 1574, James Street, Kingstown, St. Vincent &amp; the Grenadines, which is fully licensed to perform its activities by the laws of that country. Partner companies: VISEPOINT LIMITED; registration No. C 94716, registered at: 54, Immakulata, Triq il-Mina ta’ Hompesch, ZABBAR ZBR 9016, MALTA and WALLFORT LIMITED, registration number HE 364395, registered at: Agias Zonis &amp; Thessalonikis, NICOLAU PENTADROMOS CENTER, 5th floor, flat/office 305B, 3026 Limassol, Cyprus, provide content and perform operational management of the business.</span></p>
+            </ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div class="com-footer-bottom">
+      <div class="com-footer-bottom__content container">
+        <!-- <ion-row> -->
+          <ion-col  size-lg="3" size-md="3" size-xs="12">
+            <div class="com-footer-bottom__langs">
+              <div class="Select-module-host-3W2" role="listbox" data-test="home_language_select">
+                <a class="ButtonBase-module-host-3Fo select-control" type="button">
+                  <img src="../../assets/images/folgicon.png" alt="" style="width: 18px; margin-right: 10px;">
+                  <span class="select-control__label">English</span>
+                  <span class="select-control__icon-arrow-wrapper">
+                    <!-- <svg class="SvgIcon-module-host-3SE select-control__icon-arrow" viewBox="0 0 24 24" role="presentation" focusable="false" aria-hidden="true">
+                      <path fill="currentColor" fill-rule="evenodd" d="M16.707 14.707a1 1 0 000-1.414l-4-4a1 1 0 00-1.414 0l-4 4a1 1 0 101.414 1.414L12 11.414l3.293 3.293a1 1 0 001.414 0z" clip-rule="evenodd"></path>
+                    </svg> -->
+                    <!-- <ion-icon name="chevron-down-outline"></ion-icon> -->
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                  </span>
+                </a>
+                <input type="hidden" tabindex="-1" value="en">
+              </div>
+            </div>
+          </ion-col>
+          <ion-col  size-lg="9" size-md="9" size-xs="12">
+            <nav class="com-footer-bottom__nav">
+              <a class="com-footer-c-nav-link com-footer-bottom__link" href="#">
+                <span data-trans="user_tpl_regulation">Regulation</span>
+              </a>
+              <a class="com-footer-c-nav-link com-footer-bottom__link" href="#">
+                <span data-trans="site_law_info">Legal Information</span>
+              </a>
+            </nav>
+          </ion-col>
+        <!-- </ion-row>   -->
+      </div>
+    </div>
+    
+    
+  </ion-toolbar>
+</ion-footer>
+
+
+</ion-content>

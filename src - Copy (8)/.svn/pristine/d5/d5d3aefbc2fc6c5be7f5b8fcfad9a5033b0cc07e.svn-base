@@ -1,0 +1,67 @@
+
+
+ion-button {
+    --background-hover:red;
+} 
+ion-footer{
+  --background-color:#131e2a;
+}
+.containerover {
+    position: relative;
+    // width: 50%;
+  }
+  
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0094ff;
+    overflow: hidden;
+    width: 100% !important;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 1.25rem;
+
+   
+  }
+  
+  .containerover:hover .overlay {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  
+  .text{
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
